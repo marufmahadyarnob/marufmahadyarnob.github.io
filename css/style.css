@@ -20,7 +20,7 @@ body {
     padding: 40px 20px;
 }
 
-/* ================= HERO SECTION ================= */
+/* ================= HERO SECTION (ALWAYS VISIBLE) ================= */
 .hero {
     display: flex;
     align-items: center;
@@ -66,7 +66,7 @@ body {
 }
 
 .hero-image img:hover {
-    transform: scale(1.05) rotate(1deg);
+    transform: scale(1.05);
 }
 
 /* ================= HEADINGS ================= */
@@ -113,18 +113,13 @@ tr:nth-child(even) {
 }
 
 /* ================= SKILLS ================= */
-.skills {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
 .skill {
     background-color: #112240;
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.3);
     transition: transform 0.3s;
+    margin-bottom: 20px;
 }
 
 .skill:hover {
@@ -160,23 +155,17 @@ tr:nth-child(even) {
 }
 
 /* ================= PROJECTS ================= */
-.projects {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
 .project {
     background-color: #112240;
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s;
+    margin-bottom: 20px;
 }
 
 .project:hover {
     transform: translateY(-6px);
-    box-shadow: 0 12px 30px rgba(0,0,0,0.4);
 }
 
 .project h3 {
@@ -197,12 +186,11 @@ tr:nth-child(even) {
     border-radius: 14px;
     text-align: center;
     box-shadow: 0 8px 20px rgba(0,0,0,0.35);
-    transition: transform 0.3s, background 0.3s;
+    transition: transform 0.3s;
 }
 
 .card:hover {
     transform: translateY(-8px);
-    background-color: #0f2a44;
 }
 
 .card h3 {
@@ -210,25 +198,20 @@ tr:nth-child(even) {
     margin-bottom: 8px;
 }
 
-.card i {
-    margin-right: 6px;
-}
-
 .card a {
     color: #ccd6f6;
     text-decoration: none;
-    transition: color 0.3s;
 }
 
 .card a:hover {
     color: #64ffda;
 }
 
-/* ================= SCROLL REVEAL ================= */
+/* ================= SCROLL REVEAL (FIXED) ================= */
 .reveal {
     opacity: 0;
-    transform: translateY(40px);
-    transition: all 0.8s ease;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 .reveal.active {
