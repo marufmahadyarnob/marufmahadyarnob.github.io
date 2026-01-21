@@ -127,8 +127,3 @@ tr:nth-child(even) {
     transform: translateY(-5px);
     background-color: #0f2a44;
 }
-
-    p {
-        font-size: 15px;
-    }
-}
