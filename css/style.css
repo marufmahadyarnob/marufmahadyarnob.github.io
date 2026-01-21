@@ -1,3 +1,47 @@
+/* ===== HERO SECTION ===== */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 20px;
+    flex-wrap: wrap; /* mobile-friendly */
+}
+
+.hero-text {
+    flex: 1;
+    min-width: 250px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    color: #64ffda;
+    margin-bottom: 10px;
+}
+
+.hero-text h2 {
+    font-size: 32px;
+    color: #e6f1ff;
+    margin-bottom: 5px;
+}
+
+.hero-text h3 {
+    font-size: 20px;
+    color: #8892b0;
+}
+
+.hero-image {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+.hero-image img {
+    max-width: 250px;
+    border-radius: 50%;   /* circular image */
+    border: 3px solid #64ffda;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
 /* ===== BODY & CONTAINER ===== */
 body {
     font-family: Arial, Helvetica, sans-serif;
