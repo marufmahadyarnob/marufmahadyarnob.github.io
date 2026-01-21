@@ -86,36 +86,47 @@ tr:nth-child(even) {
     color: #e6f1ff;
     margin: 0;
 }
-/* ===== MOBILE RESPONSIVE ===== */
-@media (max-width: 768px) {
-    .container {
-        padding: 20px;
-    }
+/* ===== CONTACT & RESUME CARDS ===== */
+.contact-resume {
+    display: flex;
+    flex-wrap: wrap;       /* mobile-friendly */
+    gap: 20px;
+    margin-top: 20px;
+}
 
-    h1 {
-        font-size: 36px;
-    }
+.contact-resume .card {
+    background-color: #112240;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1 1 200px;      /* flexible width, minimum 200px */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    transition: transform 0.3s, background-color 0.3s;
+    text-align: center;
+}
 
-    h2 {
-        font-size: 28px;
-    }
+.contact-resume .card h3 {
+    color: #64ffda;
+    margin-bottom: 10px;
+}
 
-    h3 {
-        font-size: 20px;
-    }
+.contact-resume .card p {
+    margin: 0;
+}
 
-    table, th, td {
-        font-size: 14px;
-        padding: 8px;
-    }
+.contact-resume .card a {
+    color: #e6f1ff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
 
-    .skills, .projects {
-        gap: 15px;
-    }
+.contact-resume .card a:hover {
+    color: #64ffda;
+}
 
-    .skill, .project {
-        padding: 15px;
-    }
+.contact-resume .card:hover {
+    transform: translateY(-5px);
+    background-color: #0f2a44;
+}
 
     p {
         font-size: 15px;
