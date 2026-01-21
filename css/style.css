@@ -56,7 +56,8 @@ th {
 tr:nth-child(even) {
     background-color: #0f2a44;
 }
-* ===== SKILLS & PROJECTS ===== */
+
+/* ===== SKILLS & PROJECTS ===== */
 .skills, .projects {
     display: flex;
     flex-direction: column; /* vertical list */
@@ -86,6 +87,7 @@ tr:nth-child(even) {
     color: #e6f1ff;
     margin: 0;
 }
+
 /* ===== CONTACT & RESUME CARDS ===== */
 .contact-resume {
     display: flex;
