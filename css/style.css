@@ -1,7 +1,7 @@
 /* RESET */
 * {margin:0;padding:0;box-sizing:border-box;}
 body {font-family:'Segoe UI', Arial, Helvetica,sans-serif;background:#0a192f;color:#e6f1ff;line-height:1.7;}
-.container{max-width:950px;margin:auto;padding:40px 20px;}
+.container{max-width:950px;margin:auto;padding:80px 20px 40px 20px;}
 hr{border:none;height:1px;background:#233554;margin:40px 0;}
 
 /* NAVBAR */
@@ -11,7 +11,7 @@ hr{border:none;height:1px;background:#233554;margin:40px 0;}
 .navbar ul li a:hover{color:#00bcd4;}
 
 /* HERO */
-.hero{display:flex;align-items:center;justify-content:space-between;gap:40px;flex-wrap:wrap;margin-top:60px;}
+.hero{display:flex;align-items:center;justify-content:space-between;gap:40px;flex-wrap:wrap;margin-top:20px;}
 .hero-text{flex:1;min-width:260px;}
 .hero-text h1{font-size:52px;color:#64ffda;}
 .hero-text h2{font-size:32px;margin-top:5px;}
@@ -36,11 +36,13 @@ tr:nth-child(even){background-color:#0f2a44;}
 .skill:hover{transform:translateY(-6px);}
 .skill h3{color:#64ffda;margin-bottom:8px;}
 
-/* CIRCULAR PROGRESS */
+/* Circular progress */
 .circle{position:relative;width:120px;height:120px;margin:15px auto;}
 .circle span{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-weight:bold;}
-.circle::before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;border-radius:50%;background:#233554;}
-.circle::after{content:'';position:absolute;top:0;left:0;width:100%;height:100%;border-radius:50%;clip:rect(0,120px,120px,60px);background:linear-gradient(90deg,#64ffda,#00bcd4);transform:rotate(0deg);transform-origin:center;}
+.circle svg{transform:rotate(-90deg);}
+.circle circle{fill:none;stroke-width:10;stroke-linecap:round;}
+.circle .bg{stroke:#233554;}
+.circle .progress{stroke:linear-gradient(90deg,#64ffda,#00bcd4);stroke-dasharray: 314;stroke-dashoffset: 314;transition:stroke-dashoffset 1.5s;}
 
 /* PROJECTS */
 .projects{display:flex;flex-direction:column;gap:20px;}
@@ -67,4 +69,8 @@ tr:nth-child(even){background-color:#0f2a44;}
 .reveal.active{opacity:1;transform:translateY(0);}
 
 /* RESPONSIVE */
-@media(max-width:768px){.hero{flex-direction:column-reverse;text-align:center}.hero-text h1{font-size:42px}.hero-text h2{font-size:26px}}
+@media(max-width:768px){
+    .hero{flex-direction:column-reverse;text-align:center;}
+    .hero-text h1{font-size:42px;}
+    .hero-text h2{font-size:26px;}
+}
