@@ -1,3 +1,4 @@
+/* ===== BODY & CONTAINER ===== */
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -12,9 +13,11 @@ body {
     padding: 40px 20px;
 }
 
+/* ===== HEADINGS ===== */
 h1 {
     font-size: 48px;
     margin-bottom: 10px;
+    color: #64ffda;
 }
 
 h2 {
@@ -26,11 +29,13 @@ h3 {
     color: #8892b0;
 }
 
+/* ===== PARAGRAPH ===== */
 p {
     line-height: 1.7;
     font-size: 16px;
 }
 
+/* ===== TABLE ===== */
 table {
     width: 100%;
     border-collapse: collapse;
