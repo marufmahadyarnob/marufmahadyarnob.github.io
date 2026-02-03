@@ -1,3 +1,49 @@
+/* Ensure parent li is relative for proper dropdown positioning */
+.navbar ul li {
+    position: relative;
+}
+
+/* Dropdown menu hidden by default */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;       /* parent li-এর ঠিক নিচে */
+    left: 0;
+    background: #1d8cf8; /* accent color keep */
+    border-radius: 8px;
+    overflow: hidden;
+    min-width: 160px;
+    z-index: 999;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    pointer-events: none; /* hover না করলে clickable নয় */
+}
+
+/* Dropdown menu items */
+.dropdown-menu li a {
+    padding: 10px 15px;
+    color: white;
+    display: block;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+/* Hover effect to show dropdown */
+.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Hover color for dropdown items */
+.dropdown-menu li a:hover {
+    background: #0b3c5d;
+}
+
+
+
 /* ================= RESET =================
    Default margin/padding remove + box sizing fix */
 * {
