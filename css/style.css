@@ -70,26 +70,34 @@ body {
 
 /* ================= DROPDOWN ================= */
 .dropdown-menu {
-    display: none;
+    display: none; /* প্রথমে hidden থাকবে */
     position: absolute;
     top: 100%;
     left: 0;
+    background: #1d8cf8; /* background color */
     border-radius: 5px;
     min-width: 150px;
     z-index: 100;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2); /* subtle shadow */
+    padding: 5px 0; /* উপরে-নিচে spacing */
 }
 
 .dropdown:hover .dropdown-menu {
-    display: block;
+    display: block; /* hover করলে show হবে */
+}
+
+.dropdown-menu li {
+    margin: 4px 0; /* dropdown items এর মধ্যে vertical gap */
 }
 
 .dropdown-menu li a {
-    padding: 10px 15px;
+    padding: 10px 20px; /* clickable area বড় করা */
     color: white;
     display: block;
     text-decoration: none;
     font-weight: 500;
     transition: background 0.3s;
+    border-radius: 4px; /* hover effect সুন্দর দেখাবে */
 }
 
 .dropdown-menu li a:hover {
