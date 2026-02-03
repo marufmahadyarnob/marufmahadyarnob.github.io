@@ -3,22 +3,6 @@
     position: relative;
 }
 
-/* Dropdown menu hidden by default */
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 100%;       /* parent li-এর ঠিক নিচে */
-    left: 0;
-    background: #1d8cf8; /* accent color keep */
-    border-radius: 8px;
-    overflow: hidden;
-    min-width: 160px;
-    z-index: 999;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.35);
-    transition: opacity 0.3s ease;
-    opacity: 0;
-    pointer-events: none; /* hover না করলে clickable নয় */
-}
 
 /* Dropdown menu items */
 .dropdown-menu li a {
