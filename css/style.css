@@ -68,18 +68,18 @@ body {
     color: var(--bg-main);
 }
 
-/* ================= DROPDOWN ================= */
+/* ================= DROPDOWN (Button Style) ================= */
 .dropdown-menu {
     display: none; /* প্রথমে hidden থাকবে */
     position: absolute;
     top: 100%;
     left: 0;
-    background: #1d8cf8; /* background color */
-    border-radius: 5px;
-    min-width: 150px;
+    background: rgba(10,25,47,0.95); /* subtle dark background */
+    border-radius: 25px; /* button style */
+    min-width: 160px;
     z-index: 100;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2); /* subtle shadow */
-    padding: 5px 0; /* উপরে-নিচে spacing */
+    padding: 10px 0;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3); /* soft shadow */
 }
 
 .dropdown:hover .dropdown-menu {
@@ -87,22 +87,28 @@ body {
 }
 
 .dropdown-menu li {
-    margin: 4px 0; /* dropdown items এর মধ্যে vertical gap */
+    margin: 6px 10px; /* vertical এবং horizontal gap */
 }
 
 .dropdown-menu li a {
-    padding: 10px 20px; /* clickable area বড় করা */
-    color: white;
+    padding: 10px 18px;
     display: block;
     text-decoration: none;
-    font-weight: 500;
-    transition: background 0.3s;
-    border-radius: 4px; /* hover effect সুন্দর দেখাবে */
+    font-weight: 600;
+    color: var(--accent);
+    border: 2px solid var(--accent);
+    border-radius: 25px; /* pill shape like navbar button */
+    text-align: center;
+    transition: all 0.3s ease;
 }
 
 .dropdown-menu li a:hover {
-    background: #0b3c5d;
+    background: var(--accent);
+    color: var(--bg-main);
+    transform: translateY(-2px) scale(1.02); /* subtle hover effect */
+    box-shadow: 0 8px 20px rgba(100,255,218,0.3);
 }
+
 
 /* ================= HERO SECTION ================= */
 .hero {
