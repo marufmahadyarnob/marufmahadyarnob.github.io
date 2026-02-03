@@ -1,43 +1,11 @@
-/* Ensure parent li is relative for proper dropdown positioning */
-.navbar ul li {
-    position: relative;
-}
-
-
-/* Dropdown menu items */
-.dropdown-menu li a {
-    padding: 10px 15px;
-    color: white;
-    display: block;
-    font-weight: 500;
-    text-decoration: none;
-    transition: background 0.3s;
-}
-
-/* Hover effect to show dropdown */
-.dropdown:hover .dropdown-menu {
-    display: block;
-    opacity: 1;
-    pointer-events: auto;
-}
-
-/* Hover color for dropdown items */
-.dropdown-menu li a:hover {
-    background: #0b3c5d;
-}
-
-
-
-/* ================= RESET =================
-   Default margin/padding remove + box sizing fix */
+/* ================= RESET ================= */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* ================= ROOT VARIABLES =================
-   Reusable colors (professional practice) */
+/* ================= ROOT VARIABLES ================= */
 :root {
     --bg-main: #0a192f;
     --bg-card: #112240;
@@ -47,8 +15,7 @@
     --text-muted: #8892b0;
 }
 
-/* ================= BODY =================
-   Global font, background & text color */
+/* ================= BODY ================= */
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
     background: var(--bg-main);
@@ -56,16 +23,14 @@ body {
     line-height: 1.7;
 }
 
-/* ================= CONTAINER =================
-   Centered layout with max width */
+/* ================= CONTAINER ================= */
 .container {
     max-width: 950px;
     margin: auto;
     padding: 40px 20px;
 }
 
-/* ================= NAVBAR =================
-   Fixed top navigation bar */
+/* ================= NAVBAR ================= */
 .navbar {
     position: fixed;
     top: 0;
@@ -81,9 +46,13 @@ body {
     gap: 15px;
     list-style: none;
     padding: 12px 0;
+    flex-wrap: wrap;
 }
 
-/* Navbar buttons */
+.navbar ul li {
+    position: relative; /* Dropdown positioning */
+}
+
 .nav-btn {
     padding: 8px 18px;
     border: 2px solid var(--accent);
@@ -99,8 +68,36 @@ body {
     color: var(--bg-main);
 }
 
-/* ================= HERO SECTION =================
-   Intro area with name & image */
+/* ================= DROPDOWN ================= */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #1d8cf8;
+    border-radius: 5px;
+    min-width: 150px;
+    z-index: 100;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li a {
+    padding: 10px 15px;
+    color: white;
+    display: block;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+.dropdown-menu li a:hover {
+    background: #0b3c5d;
+}
+
+/* ================= HERO SECTION ================= */
 .hero {
     display: flex;
     align-items: center;
@@ -126,7 +123,6 @@ body {
     margin-top: 10px;
 }
 
-/* Profile image styling */
 .hero-image img {
     width: 240px;
     height: 240px;
@@ -141,21 +137,18 @@ body {
     transform: scale(1.06) rotate(1deg);
 }
 
-/* ================= SECTION HEADINGS =================
-   Common heading styles */
+/* ================= SECTION HEADINGS ================= */
 h2 {
     margin-top: 60px;
     margin-bottom: 15px;
     color: var(--accent);
 }
 
-/* Paragraph text */
 p {
     font-size: 16px;
 }
 
-/* ================= TABLE (EDUCATION) =================
-   Clean academic table */
+/* ================= TABLE ================= */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -177,8 +170,7 @@ tr:nth-child(even) {
     background: var(--bg-hover);
 }
 
-/* ================= SKILLS SECTION =================
-   Skill cards with hover animation */
+/* ================= SKILLS ================= */
 .skills {
     display: flex;
     flex-direction: column;
@@ -205,12 +197,11 @@ tr:nth-child(even) {
     margin-bottom: 6px;
 }
 
-/* Circular skill progress */
 .circle {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background: conic-gradient(var(--accent) 0deg, #233554 0deg);
+    background: conic-gradient(var(--accent) 0deg 75%, #233554 75% 360deg);
     display: grid;
     place-items: center;
 }
@@ -219,37 +210,8 @@ tr:nth-child(even) {
     font-weight: bold;
     color: var(--accent);
 }
-/* Dropdown menu hidden by default */
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 100%; /* parent li-এর নিচে */
-    left: 0;
-    background: #1d8cf8;
-    border-radius: 5px;
-    overflow: hidden;
-    min-width: 150px;
-    z-index: 100;
-}
 
-/* Dropdown menu items */
-.dropdown-menu li a {
-    padding: 10px 15px;
-    color: white;
-}
-
-/* Hover effect to show dropdown */
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
-
-/* Optional: hover color for menu items */
-.dropdown-menu li a:hover {
-    background: #0b3c5d;
-}
-
-/* ================= PROJECTS =================
-   Clickable project cards */
+/* ================= PROJECTS ================= */
 .projects {
     display: flex;
     flex-direction: column;
@@ -274,8 +236,7 @@ tr:nth-child(even) {
     color: var(--accent);
 }
 
-/* ================= CONTACT CARDS =================
-   Social & resume cards */
+/* ================= CONTACT CARDS ================= */
 .contact-resume {
     display: flex;
     flex-wrap: wrap;
@@ -311,8 +272,7 @@ tr:nth-child(even) {
     color: var(--accent);
 }
 
-/* ================= SCROLL REVEAL =================
-   Fade + slide animation */
+/* ================= SCROLL REVEAL ================= */
 .reveal {
     opacity: 0;
     transform: translateY(40px);
@@ -324,8 +284,7 @@ tr:nth-child(even) {
     transform: translateY(0);
 }
 
-/* ================= RESPONSIVE =================
-   Mobile & tablet adjustments */
+/* ================= RESPONSIVE ================= */
 @media (max-width: 768px) {
     .hero {
         flex-direction: column-reverse;
@@ -343,5 +302,10 @@ tr:nth-child(even) {
     .skill {
         flex-direction: column;
         gap: 15px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
     }
 }
