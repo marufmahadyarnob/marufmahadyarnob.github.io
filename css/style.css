@@ -71,7 +71,7 @@ body {
 }
 
 /* ================= DROPDOWN (Button Style) ================= */
-.dropdown {
+.dropdown-menu {
     display: none; /* প্রথমে hidden থাকবে */
     position: absolute;
     top: 100%;
