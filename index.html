@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ===== BASIC META ===== -->
+    <meta charset="UTF-8">
+    <title>Maruf Mahady Arnob | Portfolio</title>
+
+    <!-- ===== MAIN CSS ===== -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- ===== MAIN JS (defer = HTML load শেষে run) ===== -->
+    <script defer src="js/script.js"></script>
+
+    <!-- ===== ICONS ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<!-- ===== FIXED NAVBAR ===== -->
+<nav class="navbar">
+    <ul>
+        <li><a href="#hero" class="nav-btn">Home</a></li>
+        <li><a href="#about" class="nav-btn">About</a></li>
+        <li><a href="#skills" class="nav-btn">Skills</a></li>
+        <li><a href="#projects" class="nav-btn">Projects</a></li>
+        <li><a href="#contact" class="nav-btn">Contact</a></li>
+        <li><a href="research.html" class="nav-btn">Researches</a></li>
+        <!-- More dropdown -->
+        <li class="dropdown">
+            <a href="#" class="nav-btn">More ▼</a>
+            <ul class="dropdown-menu">
+                <li><a href="write.html" class="dropdown-nav-btn">My Writings</a></li>
+                <li><a href="image.html" class="dropdown-nav-btn">Gallery</a></li>
+                <li><a href="favorite.html" class="dropdown-nav-btn">Favorite</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+<div class="container">
+
+    <!-- ===== HERO / INTRO ===== -->
+    <section id="hero" class="hero">
+        <div class="hero-text reveal">
+            <h1>Hello</h1>
+            <h2>I'm Maruf Mahady Arnob</h2>
+            <h3>Civil Engineer | Graphic Designer | Web Learner</h3>
+        </div>
+
+        <div class="hero-image reveal">
+            <img src="images/maruf.jpg" alt="Maruf Mahady Arnob">
+        </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about">
+        <h2 class="reveal">About Me</h2>
+        <p class="reveal">
+            Civil Engineering graduate with strong interest in technology and design.
+            I work as a Graphic Designer and currently learning Web Development to build
+            modern, responsive and functional websites.
+        </p>
+    </section>
+
+    <!-- ===== EDUCATION ===== -->
+    <section id="education">
+        <h2 class="reveal">Educational Qualification</h2>
+        <table class="reveal">
+            <tr>
+                <th>Degree</th><th>Institute</th><th>Board</th><th>Year</th><th>Result</th>
+            </tr>
+            <tr>
+                <td>BSc in Civil Engineering</td>
+                <td>European University of Bangladesh</td>
+                <td>-</td>
+                <td>2023-</td>
+                <td>Processing</td>
+            </tr>
+            <tr>
+                <td>Diploma in Civil Engineering</td>
+                <td>Naogaon Polytechnic Institute</td>
+                <td>BTEB</td>
+                <td>2021</td>
+                <td>4.77</td>
+            </tr>
+            <tr>
+                <td>SSC</td>
+                <td>Kola Bizlee High School</td>
+                <td>Rajshahi</td>
+                <td>2017</td>
+                <td>5.00</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills">
+        <h2 class="reveal">Skills</h2>
+
+        <div class="skills">
+            <div class="skill reveal">
+                <div>
+                    <h3>Civil Engineering</h3>
+                    <p>AutoCAD, Estimation, Project Planning</p>
+                </div>
+                <div class="circle" data-percent="90"><span>0%</span></div>
+            </div>
+
+            <div class="skill reveal">
+                <div>
+                    <h3>Graphic Design</h3>
+                    <p>Photoshop, Illustrator, Canva</p>
+                </div>
+                <div class="circle" data-percent="85"><span>0%</span></div>
+            </div>
+
+            <div class="skill reveal">
+                <div>
+                    <h3>Web Development</h3>
+                    <p>HTML, CSS, Responsive Design</p>
+                </div>
+                <div class="circle" data-percent="60"><span>0%</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects">
+        <h2 class="reveal">Projects</h2>
+
+        <div class="projects">
+            <div class="project reveal">
+                <h3>Personal Portfolio Website</h3>
+                <p>Modern animated portfolio using HTML, CSS & JS.</p>
+            </div>
+
+            <div class="project reveal">
+                <h3>Graphic Design Works</h3>
+                <p>Logos, posters and social media designs.</p>
+            </div>
+
+            <div class="project reveal">
+                <h3>Future Web Projects</h3>
+                <p>Upcoming learning-based web applications.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact">
+        <h2 class="reveal">Contact & Resume</h2>
+
+        <div class="contact-resume">
+            <div class="card reveal copy-email" data-email="marufmahadyarnob@gmail.com">
+                <h3><i class="fa fa-envelope"></i> Email</h3>
+                <p>marufmahadyarnob@gmail.com</p>
+            </div>
+
+            <div class="card reveal">
+                <h3><i class="fa fa-facebook"></i> Facebook</h3>
+                <a href="https://www.facebook.com/whyneedme#" target="_blank">Visit</a>
+            </div>
+
+            <div class="card reveal">
+                <h3><i class="fa fa-github"></i> GitHub</h3>
+                <a href="https://github.com/marufmahadyarnob" target="_blank">Visit</a>
+            </div>
+
+            <div class="card reveal">
+                <h3><i class="fa fa-file"></i> Resume</h3>
+                <a href="files/Maruf_Arnob_Resume.pdf" target="_blank">Download PDF</a>
+            </div>
+        </div>
+    </section>
+
+</div>
+</body>
+</html>
