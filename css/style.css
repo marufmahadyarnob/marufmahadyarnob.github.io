@@ -66,6 +66,8 @@ body {
 .nav-btn:hover {
     background: var(--accent);
     color: var(--bg-main);
+    transform: translateY(-2px) scale(1.02); /* subtle hover effect */
+    box-shadow: 0 8px 20px rgba(100,255,218,0.3);
 }
 
 /* ================= DROPDOWN (Button Style) ================= */
