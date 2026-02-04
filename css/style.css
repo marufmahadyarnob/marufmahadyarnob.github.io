@@ -1,0 +1,331 @@
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================= ROOT VARIABLES ================= */
+:root {
+    --bg-main: #0a192f;
+    --bg-card: #112240;
+    --bg-hover: #0f2a44;
+    --accent: #64ffda;
+    --text-main: #ccd6f6;
+    --text-muted: #8892b0;
+}
+
+/* ================= BODY ================= */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: var(--bg-main);
+    color: var(--text-main);
+    line-height: 1.7;
+}
+
+/* ================= CONTAINER ================= */
+.container {
+    max-width: 950px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(10, 25, 47, 0.95);
+    backdrop-filter: blur(6px);
+    z-index: 100;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    list-style: none;
+    padding: 12px 0;
+    flex-wrap: wrap;
+}
+
+.navbar ul li {
+    position: relative; /* Dropdown positioning */
+}
+
+.nav-btn {
+    padding: 8px 18px;
+    border: 2px solid var(--accent);
+    border-radius: 25px;
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+    background: var(--accent);
+    color: var(--bg-main);
+    transform: translateY(-2px) scale(1.02); /* subtle hover effect */
+    box-shadow: 0 8px 20px rgba(100,255,218,0.3);
+}
+
+/* ================= DROPDOWN (Button Style) ================= */
+.dropdown-menu {
+    display: none; /* প্রথমে hidden থাকবে */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(10,25,47,0.95); /* subtle dark background */
+    border-radius: 25px; /* button style */
+    min-width: 160px;
+    z-index: 100;
+    padding: 10px 0;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3); /* soft shadow */
+}
+
+/* dropdown-nav-btn নতুন যোগ করলাম*/
+.dropdown-nav-btn {
+    display: none; /* প্রথমে hidden থাকবে */
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block; /* hover করলে show হবে */
+}
+
+.dropdown-menu li {
+    margin: 6px 10px; /* vertical এবং horizontal gap */
+}
+
+.dropdown-menu li a {
+    padding: 10px 18px;
+    display: block;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--accent);
+    border: 2px solid var(--accent);
+    border-radius: 25px; /* pill shape like navbar button */
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.dropdown-menu li a:hover {
+    background: var(--accent);
+    color: var(--bg-main);
+    transform: translateY(-2px) scale(1.02); /* subtle hover effect */
+    box-shadow: 0 8px 20px rgba(100,255,218,0.3);
+}
+
+
+/* ================= HERO SECTION ================= */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+
+.hero-text h1 {
+    font-size: 52px;
+    color: var(--accent);
+}
+
+.hero-text h2 {
+    font-size: 32px;
+    margin-top: 5px;
+}
+
+.hero-text h3 {
+    font-size: 18px;
+    color: var(--text-muted);
+    margin-top: 10px;
+}
+
+.hero-image img {
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--accent);
+    box-shadow: 0 0 25px rgba(100, 255, 218, 0.3);
+    transition: transform 0.4s ease;
+}
+
+.hero-image img:hover {
+    transform: scale(1.06) rotate(1deg);
+}
+
+/* ================= SECTION HEADINGS ================= */
+h2 {
+    margin-top: 60px;
+    margin-bottom: 15px;
+    color: var(--accent);
+}
+
+p {
+    font-size: 16px;
+}
+
+/* ================= TABLE ================= */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #233554;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background: var(--bg-card);
+    color: var(--accent);
+}
+
+tr:nth-child(even) {
+    background: var(--bg-hover);
+}
+
+/* ================= SKILLS ================= */
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skill {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--bg-card);
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+    transition: transform 0.3s ease;
+}
+
+.skill:hover {
+    transform: translateY(-6px);
+}
+
+.skill h3 {
+    color: var(--accent);
+    margin-bottom: 6px;
+}
+
+.circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: conic-gradient(var(--accent) 0deg 75%, #233554 75% 360deg);
+    display: grid;
+    place-items: center;
+}
+
+.circle span {
+    font-weight: bold;
+    color: var(--accent);
+}
+
+/* ================= PROJECTS ================= */
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project {
+    background: var(--bg-card);
+    padding: 22px;
+    border-radius: 14px;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+}
+
+.project h3 {
+    color: var(--accent);
+}
+
+/* ================= CONTACT CARDS ================= */
+.contact-resume {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    flex: 1 1 220px;
+    background: var(--bg-card);
+    padding: 22px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    background: var(--bg-hover);
+}
+
+.card h3 {
+    color: var(--accent);
+    margin-bottom: 8px;
+}
+
+.card a {
+    color: var(--text-main);
+    text-decoration: none;
+}
+
+.card a:hover {
+    color: var(--accent);
+}
+
+/* ================= SCROLL REVEAL ================= */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 42px;
+    }
+
+    .hero-text h2 {
+        font-size: 26px;
+    }
+
+    .skill {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
