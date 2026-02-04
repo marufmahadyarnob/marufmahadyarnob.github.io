@@ -84,6 +84,20 @@ body {
     box-shadow: 0 8px 25px rgba(0,0,0,0.3); /* soft shadow */
 }
 
+/* dropdown-nav-btn নতুন যোগ করলাম*/
+.dropdown-nav-btn {
+    display: none; /* প্রথমে hidden থাকবে */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(10,25,47,0.95); /* subtle dark background */
+    border-radius: 25px; /* button style */
+    min-width: 160px;
+    z-index: 100;
+    padding: 10px 0;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3); /* soft shadow */
+}
+
 .dropdown:hover .dropdown-menu {
     display: block; /* hover করলে show হবে */
 }
