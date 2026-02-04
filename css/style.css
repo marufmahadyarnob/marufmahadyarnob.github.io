@@ -71,30 +71,43 @@ body {
 }
 
 /* ================= DROPDOWN (Button Style) ================= */
+/* Dropdown parent */
+.dropdown {
+    position: relative;
+    list-style: none;
+}
+
+/* Dropdown menu (hidden by default) */
 .dropdown-menu {
-    display: none; /* প্রথমে hidden থাকবে */
     position: absolute;
     top: 100%;
     left: 0;
-    background: rgba(10,25,47,0.95); /* subtle dark background */
-    border-radius: 25px; /* button style */
-    min-width: 160px;
-    z-index: 100;
-    padding: 10px 0;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.3); /* soft shadow */
+    background: #111;
+    min-width: 180px;
+    display: none;          /* 👈 ডিফল্টভাবে হাইড */
+    flex-direction: column;
+    border-radius: 6px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    z-index: 999;
 }
 
 /* dropdown-nav-btn নতুন যোগ করলাম*/
 .dropdown-nav-btn {
-    display: none; /* প্রথমে hidden থাকবে */
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    transition: background 0.3s;
 }
 
 .dropdown:hover .dropdown-menu {
     display: block; /* hover করলে show হবে */
 }
 
+
+/* Dropdown links */
 .dropdown-menu li {
-    margin: 6px 10px; /* vertical এবং horizontal gap */
+    list-style: none;
 }
 
 .dropdown-menu li a {
