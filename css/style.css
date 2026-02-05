@@ -113,7 +113,7 @@ body {
 
 .dropdown-menu li a {
     padding: 10px 18px;
-    display: block;
+    display: none;
     text-decoration: none;
     font-weight: 600;
     color: var(--accent);
