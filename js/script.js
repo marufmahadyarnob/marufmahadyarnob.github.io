@@ -37,9 +37,13 @@ document.querySelectorAll('.copy-email').forEach(el => {
 
 /* ===== Smooth Navbar Scroll ===== */
 document.querySelectorAll('.navbar a').forEach(link => {
-    link.addEventListener('click', e => {
-        e.preventDefault();
-        document.querySelector(link.getAttribute('href'))
-            .scrollIntoView({ behavior: 'smooth' });
-    });
+    const href = link.getAttribute('href');
+
+    // শুধু internal scroll link (# দিয়ে শুরু) এর জন্য preventDefault
+    if (href.startsWith('#')) {
+        link.addEventListener('click', e => {
+            e.preventDefault();
+            document.querySelector(href).scrollIntoView({ behavior: 'smooth' });
+        });
+    }
 });
