@@ -1,43 +1,103 @@
+/* ================= BOOK DATA ================= */
+const books = [
+    {
+        name: "A",
+        author: "a",
+        description: "b",
+        img: "images/maruf.jpg"
+    },
+    {
+        name: "B",
+        author: "a",
+        description: "b",
+        img: "images/maruf.jpg"
+    },
+    // এখানে আরও বই যোগ করতে পারো
+];
+
+/* ================= DOM ELEMENTS ================= */
+const bookList = document.getElementById("bookList");
+const searchInput = document.getElementById("searchInput");
+const typeSelect = document.getElementById("typeSelect");
+const modal = document.getElementById("modal");
+const modalContent = document.querySelector(".modal-content");
+const modalClose = document.querySelector(".close");
+
+/* ================= RENDER BOOKS ================= */
+function renderBooks(list) {
+    bookList.innerHTML = "";
+    if(list.length === 0){
+        bookList.innerHTML = `<p style="color: var(--text-muted); text-align:center;">No books found.</p>`;
+        return;
+    }
+    list.forEach(book => {
+        const card = document.createElement("div");
+        card.className = "book-card reveal";
+        card.innerHTML = `
+            <img src="${book.img}" alt="${book.name}" class="book-img">
+            <div class="book-content">
+                <h3 class="book-name">${book.name}</h3>
+                <p class="author">Author: ${book.author}</p>
+                <p class="description">${book.description}</p>
+                <button>View</button>
+            </div>
+        `;
+        // modal open
+        card.querySelector("button").addEventListener("click", () => openModal(book));
+        bookList.appendChild(card);
+    });
+}
+
+/* ================= FILTER & SEARCH ================= */
 function filterBooks() {
-    let search = document.getElementById("searchInput").value.toLowerCase();
-    let category = document.getElementById("categoryFilter").value;
-    let cards = document.querySelectorAll(".book-card");
+    const searchText = searchInput.value.toLowerCase();
+    const typeText = typeSelect.value.toLowerCase();
 
-    cards.forEach(card => {
-        let author = card.querySelector(".author").innerText.toLowerCase();
-        let cardCategory = card.getAttribute("data-category");
-
-        let matchAuthor = author.includes(search);
-        let matchCategory = (category === "all" || category === cardCategory);
-
-        card.style.display = (matchAuthor && matchCategory) ? "flex" : "none";
-    });
-}
-
-function sortBooks() {
-    let list = document.getElementById("bookList");
-    let cards = Array.from(list.children);
-
-    cards.sort((a, b) => {
-        let nameA = a.querySelector(".book-name").innerText.toLowerCase();
-        let nameB = b.querySelector(".book-name").innerText.toLowerCase();
-        return nameA.localeCompare(nameB);
+    const filtered = books.filter(book => {
+        const matchesSearch = book.name.toLowerCase().includes(searchText);
+        const matchesType = typeText === "all" || book.type === typeText;
+        return matchesSearch && matchesType;
     });
 
-    cards.forEach(card => list.appendChild(card));
+    renderBooks(filtered);
 }
 
-function openModal(btn) {
-    let card = btn.closest(".book-card");
-
-    document.getElementById("modalImg").src = card.querySelector("img").src;
-    document.getElementById("modalTitle").innerText = card.querySelector(".book-name").innerText;
-    document.getElementById("modalAuthor").innerText = card.querySelector(".author").innerText;
-    document.getElementById("modalDesc").innerText = card.querySelector(".description").innerText;
-
-    document.getElementById("modal").style.display = "flex";
+/* ================= MODAL FUNCTIONS ================= */
+function openModal(book) {
+    modal.style.display = "flex";
+    modalContent.innerHTML = `
+        <span class="close">&times;</span>
+        <img src="${book.img}" alt="${book.name}">
+        <h2>${book.name}</h2>
+        <p><strong>Author:</strong> ${book.author}</p>
+        <p>${book.description}</p>
+    `;
+    modal.querySelector(".close").addEventListener("click", closeModal);
 }
 
 function closeModal() {
-    document.getElementById("modal").style.display = "none";
+    modal.style.display = "none";
 }
+
+/* ================= INITIAL RENDER ================= */
+renderBooks(books);
+
+/* ================= EVENT LISTENERS ================= */
+searchInput.addEventListener("input", filterBooks);
+typeSelect.addEventListener("change", filterBooks);
+window.addEventListener("click", e => {
+    if(e.target === modal) closeModal();
+});
+
+/* ================= SCROLL REVEAL ================= */
+const reveals = document.querySelectorAll('.reveal');
+function revealOnScroll() {
+    reveals.forEach(el => {
+        const top = el.getBoundingClientRect().top;
+        if(top < window.innerHeight - 50) {
+            el.classList.add('active');
+        }
+    });
+}
+window.addEventListener('scroll', revealOnScroll);
+revealOnScroll();
