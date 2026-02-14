@@ -8,53 +8,34 @@
 </head>
 <body>
 
+<!-- Back Button Top-left -->
+<button class="back-btn" onclick="location.href='index.html'">← Back</button>
+
 <div class="container">
 
-    <h1 class="main-heading">প্রিয় বইগুলো</h1>
+    <h1 class="main-heading">প্রিয় বইগুলো</h1>
 
     <div class="controls">
-        <input type="text" id="searchInput" placeholder="বই খুঁজুন..." onkeyup="filterBooks()">
-
-        <select id="categoryFilter" onchange="filterBooks()">
+        <input type="text" id="searchInput" placeholder="বই খুঁজুন...">
+        <select id="categoryFilter">
             <option value="all">সব ক্যাটাগরি</option>
             <option value="গল্প">গল্প</option>
             <option value="উপন্যাস">উপন্যাস</option>
         </select>
-
-        <button onclick="sortBooks()">A → Z</button>
-<!-- Back Button -->
-<button class="back-btn" onclick="location.href='index.html'">Back</button>
+        <button id="sortBtn">A → Z</button>
     </div>
 
-    <div id="bookList">
+    <div id="bookList"></div>
 
-        <div class="book-card" data-category="গল্প">
-            <img src="https://via.placeholder.com/120x160" class="book-img">
-            <div class="book-content">
-                <h2 class="book-name">নাম : কালিন্দীর নৌকা</h2>
-                <p class="author">লেখক : শীর্ষেন্দু মুখোপাধ্যায়</p>
-                <p class="description">বিবরণ : অ্যাডভেঞ্চার ও ভৌতিক গল্প</p>
-                <button onclick="openModal(this)">বিস্তারিত</button>
-            </div>
-        </div>
-
-        <div class="book-card" data-category="উপন্যাস">
-            <img src="https://via.placeholder.com/120x160" class="book-img">
-            <div class="book-content">
-                <h2 class="book-name">নাম : B</h2>
-                <p class="author">লেখক : b</p>
-                <p class="description">বিবরণ : একটি সুন্দর উপন্যাস।</p>
-                <button onclick="openModal(this)">বিস্তারিত</button>
-            </div>
-        </div>
-
-    </div>
 </div>
+
+<!-- Scroll to Top Button -->
+<button id="scrollTopBtn">↑ Top</button>
 
 <!-- Modal -->
 <div id="modal" class="modal">
     <div class="modal-content">
-        <span onclick="closeModal()" class="close">&times;</span>
+        <span class="close">&times;</span>
         <img id="modalImg">
         <h2 id="modalTitle"></h2>
         <p id="modalAuthor"></p>
@@ -63,6 +44,5 @@
 </div>
 
 <script src="js/favorite-book.js"></script>
-
 </body>
 </html>
