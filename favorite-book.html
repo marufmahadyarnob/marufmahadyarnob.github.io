@@ -1,70 +1,69 @@
 <!DOCTYPE html>
 <html lang="bn">
 <head>
-
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>প্রিয় বইগুলো</title>
-
-<link rel="stylesheet" href="css/favorite-book-style.css">
-
+<meta charset="UTF-8"> <!-- charset -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- responsive -->
+<title>প্রিয় বইগুলো</title> <!-- page title -->
+<link rel="stylesheet" href="css/favorite-book-style.css"> <!-- css link -->
 </head>
-
 <body>
+<header class="top-bar"> <!-- top nav bar -->
+<a href="index.html" class="back-btn">← Back</a> <!-- back button -->
+<input type="text" id="searchInput" placeholder="বই খুঁজুন..."> <!-- search input -->
+<div class="category-filter" id="categoryFilter"> <!-- category buttons container -->
+<button class="cat-btn" data-cat="all">All</button>
+<button class="cat-btn" data-cat="Novel">Novel</button>
+<button class="cat-btn" data-cat="Horror">Horror</button>
+<button class="cat-btn" data-cat="History">History</button>
+</div>
+<div class="total-count" id="totalCount">Total Books: 0</div> <!-- total books counter -->
+</header>
 
+<section class="banner"> <!-- banner section -->
+<img src="favorite-book.jpg"> <!-- banner image -->
+<div class="banner-text">প্রিয় বইগুলো</div> <!-- banner text -->
+</section>
 
-<button class="back-btn">← Back</button>
+<section class="book-container" id="bookContainer"> <!-- all books container -->
 
+<!-- BOOK CARD START -->
+<div class="book-card" data-category="Novel"> <!-- card wrapper + category -->
+<img src="book-cover/pather-panchali.jpg" class="book-img"> <!-- cover image -->
+<div class="book-header"> <!-- header -->
+<h2 class="book-name">পথের পাঁচালী</h2> <!-- book name -->
+<div class="book-info"> <!-- author & topic -->
+<span>লেখক: বিভূতিভূষণ বন্দ্যোপাধ্যায়</span>
+<span>টপিক: উপন্যাস</span>
+</div>
+<div class="book-rating">⭐⭐⭐⭐⭐</div> <!-- rating -->
+<div class="book-badge">❤️ Favorite</div> <!-- favorite badge -->
+</div>
+<p class="book-description short">অপুর জীবন সংগ্রামের অসাধারণ গল্প...</p> <!-- short description -->
+<p class="book-description full">অপুর জীবন সংগ্রামের অসাধারণ গল্প যেখানে গ্রামীণ জীবনের বাস্তবতা এবং আবেগ ফুটে উঠেছে।</p> <!-- full description -->
+<button class="more-btn">More</button> <!-- expand button -->
+</div>
+<!-- BOOK CARD END -->
 
-<div class="container">
-<h1 class="main-heading">প্রিয় বইগুলো</h1>
-<div class="controls">
-<input type="text" id="searchInput" placeholder="বই খুঁজুন...">
-
-<select id="categoryFilter">
-<option value="all">সব</option>
-<option value="গল্প">গল্প</option>
-<option value="উপন্যাস">উপন্যাস</option>
-</select>
-
-<button id="sortBtn">Sort</button>
+<!-- Another example -->
+<div class="book-card" data-category="Novel">
+<img src="book-cover/debdas.jpg" class="book-img">
+<div class="book-header">
+<h2 class="book-name">দেবদাস</h2>
+<div class="book-info">
+<span>লেখক: শরৎচন্দ্র চট্টোপাধ্যায়</span>
+<span>টপিক: প্রেম</span>
+</div>
+<div class="book-rating">⭐⭐⭐⭐</div>
+</div>
+<p class="book-description short">একটি অসমাপ্ত প্রেমের গল্প...</p>
+<p class="book-description full">একটি অসমাপ্ত প্রেমের গল্প যেখানে দেবদাস এবং পার্বতীর জীবনের ট্র্যাজেডি তুলে ধরা হয়েছে।</p>
+<button class="more-btn">More</button>
 </div>
 
+</section>
 
-<div id="bookList"></div>
-
-
-</div>
-
-
-<button id="scrollTopBtn">↑</button>
-
-
-
-<div id="modal" class="modal">
-
-<div class="modal-content">
-
-<span class="close">&times;</span>
-
-<img id="modalImg">
-
-<h2 id="modalTitle"></h2>
-
-<p id="modalAuthor"></p>
-
-<p id="modalDesc"></p>
-
-</div>
-
-</div>
-
-
+<button id="topBtn">↑</button> <!-- scroll to top button -->
 
 <script src="js/favorite-book.js"></script>
-
-
 </body>
 </html>
