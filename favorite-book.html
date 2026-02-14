@@ -1,48 +1,85 @@
 <!DOCTYPE html>
 <html lang="bn">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>প্রিয় বইগুলো</title>
-    <link rel="stylesheet" href="css/favorite-book-style.css">
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>প্রিয় বইগুলো</title>
+
+<link rel="stylesheet" href="css/favorite-book-style.css">
+
 </head>
+
 <body>
 
-<!-- Back Button Top-left -->
-<button class="back-btn" onclick="location.href='index.html'">← Back</button>
+
+<button class="back-btn">← Back</button>
+
 
 <div class="container">
 
-    <h1 class="main-heading">প্রিয় বইগুলো</h1>
+<h1 class="main-heading">প্রিয় বইগুলো</h1>
 
-    <div class="controls">
-        <input type="text" id="searchInput" placeholder="বই খুঁজুন...">
-        <select id="categoryFilter">
-            <option value="all">সব ক্যাটাগরি</option>
-            <option value="গল্প">গল্প</option>
-            <option value="উপন্যাস">উপন্যাস</option>
-        </select>
-        <button id="sortBtn">A → Z</button>
-    </div>
 
-    <div id="bookList"></div>
+<div class="controls">
+
+<input type="text" id="searchInput" placeholder="বই খুঁজুন...">
+
+
+<select id="categoryFilter">
+
+<option value="all">সব</option>
+
+<option value="গল্প">গল্প</option>
+
+<option value="উপন্যাস">উপন্যাস</option>
+
+</select>
+
+
+<button id="sortBtn">Sort</button>
+
+
+<button id="addBookBtn">+ Add Book</button>
+
 
 </div>
 
-<!-- Scroll to Top Button -->
-<button id="scrollTopBtn">↑ Top</button>
 
-<!-- Modal -->
+<div id="bookList"></div>
+
+
+</div>
+
+
+<button id="scrollTopBtn">↑</button>
+
+
+
 <div id="modal" class="modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <img id="modalImg">
-        <h2 id="modalTitle"></h2>
-        <p id="modalAuthor"></p>
-        <p id="modalDesc"></p>
-    </div>
+
+<div class="modal-content">
+
+<span class="close">&times;</span>
+
+<img id="modalImg">
+
+<h2 id="modalTitle"></h2>
+
+<p id="modalAuthor"></p>
+
+<p id="modalDesc"></p>
+
 </div>
+
+</div>
+
+
 
 <script src="js/favorite-book.js"></script>
+
+
 </body>
 </html>
