@@ -12,7 +12,15 @@ this.style.display="none";
 document.getElementById("searchInput").addEventListener("keyup",function(){
 let value=this.value.toLowerCase();
 document.querySelectorAll(".book-card").forEach(card=>{
-card.style.display=card.innerText.toLowerCase().includes(value)?"block":"none";
+card.style.display="block"; // reset
+card.querySelectorAll(".highlight").forEach(span=>span.replaceWith(...span.childNodes));
+if(!card.innerText.toLowerCase().includes(value)){card.style.display="none";}
+else if(value!==""){
+let regex=new RegExp(`(${value})`,"gi");
+card.querySelectorAll(".book-details").forEach(details=>{
+details.innerHTML=details.innerHTML.replace(/<span class="highlight">|<\/span>/g,'').replace(regex,'<span class="highlight">$1</span>');
+});
+}
 });
 });
 
