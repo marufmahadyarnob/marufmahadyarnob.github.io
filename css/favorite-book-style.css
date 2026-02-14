@@ -1,31 +1,40 @@
 /* ================= RESET ================= */
 * { margin:0; padding:0; box-sizing:border-box; }
+
 :root {
-    --bg-main:#0a192f;
-    --bg-card:#112240;
-    --bg-hover:#0f2a44;
-    --accent:#64ffda;
-    --text-main:#ccd6f6;
-    --text-muted:#8892b0;
+    --bg-main: #0a192f;      /* Body background */
+    --bg-card: #1b2a44;      /* Card background – একটু হালকা */
+    --bg-hover: #2a3a5a;     /* Card hover */
+    --accent: #64ffda;       /* Accent / border / badge */
+    --text-main: #e0e6f3;    /* Main text – হালকা blue */
+    --text-muted: #8892b0;   /* Secondary text */
 }
+
+/* ================= BODY ================= */
 body {
     font-family:'Segoe UI', Arial, sans-serif;
-    background:var(--bg-main);
-    color:var(--text-main);
+    background: var(--bg-main);
+    color: var(--text-main);
     line-height:1.7;
-    padding-top:90px;
+    padding-top: 90px;
 }
+
+/* ================= CONTAINER ================= */
 .container {
-    max-width:950px;
-    margin:auto;
-    padding:20px;
+    max-width: 950px;
+    margin: auto;
+    padding: 20px;
 }
+
+/* ================= MAIN HEADING ================= */
 .main-heading {
     text-align:center;
     font-size:42px;
     color:var(--accent);
     margin-bottom:30px;
 }
+
+/* ================= CONTROLS ================= */
 .controls {
     display:flex;
     justify-content:center;
@@ -41,13 +50,13 @@ body {
     border:2px solid var(--accent);
     outline:none;
     font-size:14px;
-    background:var(--bg-card);
-    color:var(--text-main);
+    background: var(--bg-card);
+    color: var(--text-main);
     transition: all 0.3s ease;
 }
 .controls input::placeholder { color:var(--text-muted); }
 .controls button { cursor:pointer; background:var(--accent); color:var(--bg-main); }
-.controls button:hover { background:var(--bg-hover); color:var(--accent); }
+.controls button:hover { background: var(--bg-hover); color:var(--accent); }
 
 /* ================= BACK BUTTON ================= */
 .back-btn {
@@ -73,15 +82,22 @@ body {
 .book-card {
     display:flex;
     gap:20px;
-    background:var(--bg-card);
+    background: var(--bg-card);
     border-radius:20px;
     padding:20px;
     box-shadow:0 15px 35px rgba(0,0,0,0.3);
     transition: transform 0.4s ease, box-shadow 0.4s ease;
     backdrop-filter: blur(6px);
 }
-.book-card:hover { transform:translateY(-8px); box-shadow:0 20px 50px rgba(0,0,0,0.5);}
-.book-img { width:120px; height:160px; border-radius:12px; object-fit:cover; border:2px solid var(--accent);}
+.book-card:hover { transform: translateY(-8px); box-shadow:0 20px 50px rgba(0,0,0,0.5);}
+.book-img {
+    width:120px;
+    height:160px;
+    border-radius:12px;
+    object-fit:cover;
+    border:2px solid var(--accent);
+    filter: brightness(1.05);
+}
 .book-content { flex:1; }
 .category-badge {
     display:inline-block;
@@ -96,18 +112,45 @@ body {
 .author { color:var(--text-muted); margin-bottom:6px; }
 .description { color:var(--text-main); margin-bottom:8px; }
 .book-content button {
-    padding:6px 14px; border:none; border-radius:20px;
-    background:var(--accent); color:var(--bg-main); cursor:pointer; transition:all 0.3s ease;
+    padding:6px 14px;
+    border:none;
+    border-radius:20px;
+    background:var(--accent);
+    color:var(--bg-main);
+    cursor:pointer;
+    transition: all 0.3s ease;
 }
 .book-content button:hover { background:var(--bg-hover); color:var(--accent); }
 
 /* ================= MODAL ================= */
-.modal { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.7); justify-content:center; align-items:center; z-index:999; }
-.modal-content { background:var(--bg-card); padding:30px; border-radius:20px; max-width:400px; text-align:center; box-shadow:0 20px 50px rgba(0,0,0,0.5); position:relative; animation:fadeUp 0.4s ease;}
-.modal-content img { width:150px; margin-bottom:15px; border-radius:12px; border:2px solid var(--accent);}
-.modal-content h2 { color:var(--accent); margin-bottom:8px;}
-.modal-content p { color:var(--text-main); margin-bottom:6px;}
-.close { position:absolute; top:15px; right:20px; font-size:28px; cursor:pointer; color:var(--accent); transition:transform 0.3s ease;}
+.modal {
+    display:none;
+    position:fixed;
+    inset:0;
+    background: rgba(0,0,0,0.7);
+    justify-content:center;
+    align-items:center;
+    z-index:999;
+}
+.modal-content {
+    background: var(--bg-card);
+    padding:30px;
+    border-radius:20px;
+    max-width:400px;
+    text-align:center;
+    box-shadow:0 20px 50px rgba(0,0,0,0.5);
+    position:relative;
+    animation:fadeUp 0.4s ease;
+}
+.modal-content img {
+    width:150px;
+    margin-bottom:15px;
+    border-radius:12px;
+    border:2px solid var(--accent);
+}
+.modal-content h2 { color:var(--accent); margin-bottom:8px; }
+.modal-content p { color:var(--text-main); margin-bottom:6px; }
+.close { position:absolute; top:15px; right:20px; font-size:28px; cursor:pointer; color:var(--accent); transition:transform 0.3s ease; }
 .close:hover { transform:scale(1.2); }
 
 /* ================= SCROLL TOP BUTTON ================= */
@@ -135,4 +178,4 @@ body {
 @media(max-width:768px){
     .book-card { flex-direction:column; align-items:center; text-align:center; }
     .book-img { width:140px; height:180px; }
-}
+} 
