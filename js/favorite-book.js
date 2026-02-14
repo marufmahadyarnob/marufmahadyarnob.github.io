@@ -1,26 +1,19 @@
-// Expand More button
+// More button expand
 document.querySelectorAll(".more-btn").forEach(button=>{
-button.onclick=function(){
+button.addEventListener("click",function(){
 let card=this.parentElement;
 card.querySelector(".short").style.display="none";
 card.querySelector(".full").style.display="block";
 this.style.display="none";
-}
+});
 });
 
-// Search filter + highlight
+// Search filter
 document.getElementById("searchInput").addEventListener("keyup",function(){
 let value=this.value.toLowerCase();
 document.querySelectorAll(".book-card").forEach(card=>{
-card.style.display="block"; // reset
-card.querySelectorAll(".highlight").forEach(span=>span.replaceWith(...span.childNodes));
-if(!card.innerText.toLowerCase().includes(value)){card.style.display="none";}
-else if(value!==""){
-let regex=new RegExp(`(${value})`,"gi");
-card.querySelectorAll(".book-details").forEach(details=>{
-details.innerHTML=details.innerHTML.replace(/<span class="highlight">|<\/span>/g,'').replace(regex,'<span class="highlight">$1</span>');
-});
-}
+let text=card.innerText.toLowerCase();
+card.style.display=text.includes(value)?"block":"none";
 });
 });
 
@@ -30,12 +23,12 @@ window.onscroll=function(){topBtn.style.display=window.scrollY>200?"block":"none
 topBtn.onclick=function(){window.scrollTo({top:0,behavior:"smooth"});}
 
 // Total book counter
-let count=document.querySelectorAll(".book-card").length;
-document.getElementById("totalCount").innerText="Total Books: "+count;
+let totalCount=document.querySelectorAll(".book-card").length;
+document.getElementById("totalCount").innerText="Total Books: "+totalCount;
 
 // Category filter
 document.querySelectorAll(".cat-btn").forEach(btn=>{
-btn.onclick=function(){
+btn.addEventListener("click",function(){
 let cat=this.getAttribute("data-cat");
 document.querySelectorAll(".book-card").forEach(card=>{
 card.style.display=(cat==="all" || card.getAttribute("data-category")===cat)?"block":"none";
