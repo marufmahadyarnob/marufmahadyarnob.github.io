@@ -102,7 +102,7 @@ body {
 
 .book-img {
     width: 500px;
-    height: 500px;
+    height: 160px;
     border-radius: 15px;
     object-fit: cover;
     border: 2px solid var(--accent);
