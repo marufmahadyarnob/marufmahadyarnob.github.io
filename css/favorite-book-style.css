@@ -101,8 +101,8 @@ body {
 }
 
 .book-img {
-    width: 120px;
-    height: 160px;
+    width: 500px;
+    height: 500px;
     border-radius: 15px;
     object-fit: cover;
     border: 2px solid var(--accent);
