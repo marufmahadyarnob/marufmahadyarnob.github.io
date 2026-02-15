@@ -1,13 +1,74 @@
-body{margin:0;font-family:sans-serif;background:#061a2b;color:white;}
-.top-bar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;padding:10px;background:#0a2238;position:sticky;top:0;z-index:1000;}
-.back-btn{color:white;text-decoration:none;background:#0d3b66;padding:8px 15px;border-radius:6px;transition:0.3s;}
-.back-btn:hover{background:#134074;}
-#searchInput{padding:8px;width:50%;background:#082032;border:none;color:white;border-radius:6px;margin:5px 0;}
-.category-filter{display:flex;gap:5px;margin:5px 0;}
-.cat-btn{padding:5px 10px;border:none;border-radius:6px;background:#0d3b66;color:white;cursor:pointer;transition:0.3s;}
-.cat-btn:hover{background:#134074;}
-.total-count{color:#bbb;font-size:14px;margin-left:10px;}
-.banner{position:relative;}
+body{
+  margin:0;
+  font-family:sans-serif;
+  background:#061a2b;
+  color:white;
+}
+
+.top-bar{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  align-items:center;
+  padding:10px;
+  background:#0a2238;
+  position:sticky;
+  top:0;z-index:1000;
+}
+
+.back-btn{
+  color:white;
+  text-decoration:none;
+  background:#0d3b66;
+  padding:8px 15px;
+  border-radius:6px;
+  transition:0.3s;
+}
+
+.back-btn:hover{
+  background:#134074;
+}
+
+#searchInput{
+  padding:8px;
+  width:50%;
+  background:#082032;
+  border:none;
+  color:white;
+  border-radius:6px;
+  margin:5px 0;
+}
+
+.category-filter{
+  display:flex;
+  gap:5px;
+  margin:5px 0;
+}
+
+.cat-btn{
+  padding:5px 10px;
+  border:none;
+  border-radius:6px;
+  background:#0d3b66;
+  color:white;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.cat-btn:hover{
+  background:#134074;
+}
+
+.total-count{
+  color:#bbb;
+  font-size:14px;
+  margin-left:10px;
+}
+
+.banner{
+  position:relative;
+}
+
 .banner-img{width:100%;height:150px;object-fit:cover;border-radius:0 0 10px 10px;}
 .banner-text{position:absolute;bottom:10px;left:20px;font-size:28px;font-weight:bold;}
 .book-container{padding:15px;display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));grid-gap:15px;}
