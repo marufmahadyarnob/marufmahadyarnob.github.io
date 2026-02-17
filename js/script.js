@@ -47,3 +47,50 @@ document.querySelectorAll('.navbar a').forEach(link => {
         });
     }
 });
+
+// ===== Visitor Counter with smooth animation =====
+fetch("https://api.countapi.xyz/hit/marufmahadyarnob.github.io/visits")
+.then(response => response.json())
+.then(data => {
+    const countElement = document.getElementById("visitor-count");
+    let start = 0;
+    const end = data.value;
+    const duration = 1500; // animation duration in ms
+    const stepTime = Math.max(Math.floor(duration / end), 20);
+
+    let counter = setInterval(() => {
+        start++;
+        countElement.textContent = start;
+
+        // Confetti sparkle on milestone (every 1000 visitors)
+        if(start % 1000 === 0 && start !== 0){
+            createConfetti();
+        }
+
+        if(start >= end){
+            clearInterval(counter);
+        }
+    }, stepTime);
+});
+
+// ===== Confetti function =====
+function createConfetti(){
+    const confetti = document.createElement("div");
+    confetti.classList.add("confetti");
+    confetti.style.left = Math.random() * window.innerWidth + "px";
+    confetti.style.top = "-20px";
+    confetti.style.width = confetti.style.height = Math.random() * 10 + 5 + "px";
+    confetti.style.background = "#00b4d8";
+    confetti.style.opacity = Math.random();
+    confetti.style.position = "absolute";
+    confetti.style.borderRadius = "50%";
+    document.body.appendChild(confetti);
+
+    let fall = setInterval(() => {
+        confetti.style.top = (parseInt(confetti.style.top) + 5) + "px";
+        if(parseInt(confetti.style.top) > window.innerHeight){
+            confetti.remove();
+            clearInterval(fall);
+        }
+    }, 20);
+}
