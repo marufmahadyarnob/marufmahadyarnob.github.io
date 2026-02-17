@@ -329,3 +329,33 @@ tr:nth-child(even) {
         gap: 10px;
     }
 }
+/* ===== FOOTER ===== */
+.footer {
+    background: #0d1b2a;
+    color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 60px;
+    border-top: 2px solid #1b263b;
+}
+
+.footer-content {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.visitor-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.footer img {
+    margin: 10px 0;
+}
+
+.copyright {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #cccccc;
+}
