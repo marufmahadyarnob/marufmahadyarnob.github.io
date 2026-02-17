@@ -331,31 +331,45 @@ tr:nth-child(even) {
 }
 /* ===== FOOTER ===== */
 .footer {
-    background: #0d1b2a;
-    color: #ffffff;
-    padding: 40px 20px;
+    background: linear-gradient(135deg, #0d1b2a, #1b263b);
+    padding: 60px 20px 30px;
     text-align: center;
-    margin-top: 60px;
-    border-top: 2px solid #1b263b;
+    margin-top: 80px;
 }
 
-.footer-content {
-    max-width: 1000px;
-    margin: auto;
+/* Visitor Card */
+.visitor-card {
+    display: inline-block;
+    padding: 25px 50px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 180, 216, 0.3);
+    box-shadow: 0 0 25px rgba(0, 180, 216, 0.2);
+    transition: 0.3s ease;
 }
 
-.visitor-title {
-    font-size: 18px;
+.visitor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 35px rgba(0, 180, 216, 0.4);
+}
+
+.visitor-text {
+    color: #cccccc;
     margin-bottom: 15px;
     letter-spacing: 1px;
+    font-size: 15px;
 }
 
-.footer img {
-    margin: 10px 0;
-}
-
-.copyright {
-    margin-top: 15px;
+/* Bottom Part */
+.footer-bottom {
+    margin-top: 40px;
+    color: #bbbbbb;
     font-size: 14px;
-    color: #cccccc;
+}
+
+.signature {
+    margin-top: 5px;
+    color: #00b4d8;
+    letter-spacing: 1px;
 }
