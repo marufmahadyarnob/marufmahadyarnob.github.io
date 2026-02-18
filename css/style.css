@@ -329,61 +329,43 @@ tr:nth-child(even) {
         gap: 10px;
     }
 }
-/* ===== FOOTER ===== */
+/* ===== FOOTER COMPACT ===== */
 .footer {
-    background: linear-gradient(135deg, #0d1b2a, #1b263b);
-    padding: 80px 20px 40px;
+    background: #0d1b2a;
+    padding: 30px 10px;
     text-align: center;
 }
 
-/* Visitor Card */
+/* Small visitor box */
 .visitor-card {
-    display: inline-block;
-    padding: 30px 60px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 18px;
     background: rgba(255,255,255,0.05);
-    backdrop-filter: blur(12px);
     border-radius: 20px;
     border: 1px solid rgba(0,180,216,0.3);
-    box-shadow: 0 0 25px rgba(0,180,216,0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.visitor-card:hover {
-    transform: translateY(-8px) scale(1.05);
-    box-shadow: 0 0 50px rgba(0,180,216,0.5);
-}
-
-.visitor-text {
-    color: #cccccc;
-    margin-bottom: 15px;
-    letter-spacing: 1px;
-    font-size: 16px;
-}
-
-/* Visitor Number with Glow + Gradient */
-#visitor-count {
-    font-size: 48px;
-    font-weight: bold;
-    background: linear-gradient(90deg, #00b4d8, #48cae4);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 0 0 5px #00b4d8, 0 0 10px #48cae4;
-    animation: glow 1.5s ease-in-out infinite alternate;
-}
-
-/* Glow animation */
-@keyframes glow {
-    0% { text-shadow: 0 0 5px #00b4d8, 0 0 10px #48cae4; }
-    100% { text-shadow: 0 0 15px #00b4d8, 0 0 30px #48cae4; }
-}
-
-.signature {
-    color: #00b4d8;
-    margin-top: 15px;
     font-size: 14px;
-    letter-spacing: 1px;
 }
 
+/* Small label */
+.visitor-label {
+    color: #cccccc;
+}
+
+/* Smaller glowing number */
+#visitor-count {
+    font-size: 18px;
+    font-weight: bold;
+    color: #00b4d8;
+}
+
+/* Small signature */
+.signature {
+    margin-top: 8px;
+    font-size: 12px;
+    color: #00b4d8;
+}
 /* Confetti placeholder (optional, needs JS) */
 .confetti {
     position: absolute;
