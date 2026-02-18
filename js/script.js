@@ -49,28 +49,13 @@ document.querySelectorAll('.navbar a').forEach(link => {
 });
 
 // ===== Visitor Counter with smooth animation =====
-fetch("https://api.countapi.xyz/hit/marufmahadyarnob.github.io/visits")
-.then(response => response.json())
+fetch("https://api.countapi.xyz/hit/marufmahadyarnob.github.io/portfolio")
+.then(res => res.json())
 .then(data => {
-    const countElement = document.getElementById("visitor-count");
-    let start = 0;
-    const end = data.value;
-    const duration = 1500; // animation duration in ms
-    const stepTime = Math.max(Math.floor(duration / end), 20);
-
-    let counter = setInterval(() => {
-        start++;
-        countElement.textContent = start;
-
-        // Confetti sparkle on milestone (every 1000 visitors)
-        if(start % 1000 === 0 && start !== 0){
-            createConfetti();
-        }
-
-        if(start >= end){
-            clearInterval(counter);
-        }
-    }, stepTime);
+    document.getElementById("visitor-count").textContent = data.value;
+})
+.catch(() => {
+    document.getElementById("visitor-count").textContent = "1";
 });
 
 // ===== Confetti function =====
