@@ -49,13 +49,12 @@ document.querySelectorAll('.navbar a').forEach(link => {
 });
 
 // ===== Visitor Counter with smooth animation =====
+const counter = document.getElementById("visitor-count");
+
 fetch("https://api.countapi.xyz/hit/marufmahadyarnob.github.io/portfolio")
-.then(res => res.json())
+.then(response => response.json())
 .then(data => {
-    document.getElementById("visitor-count").textContent = data.value;
-})
-.catch(() => {
-    document.getElementById("visitor-count").textContent = "1";
+    counter.innerText = data.value;
 });
 
 // ===== Confetti function =====
