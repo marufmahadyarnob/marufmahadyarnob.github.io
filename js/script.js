@@ -1,3 +1,23 @@
+ /* ===== More Button Hover ===== */
+ // Wait for DOM
+    document.addEventListener('DOMContentLoaded', function() {
+        const moreBtn = document.getElementById('more-btn');
+        const moreMenu = document.getElementById('more-menu');
+
+        // Toggle dropdown on click
+        moreBtn.addEventListener('click', function(e) {
+            e.preventDefault(); // prevent page jump
+            moreMenu.style.display = (moreMenu.style.display === 'block') ? 'none' : 'block';
+        });
+
+        // Close dropdown if clicked outside
+        document.addEventListener('click', function(e) {
+            if (!moreBtn.contains(e.target) && !moreMenu.contains(e.target)) {
+                moreMenu.style.display = 'none';
+            }
+        });
+    });
+
 /* ===== Scroll Reveal Animation ===== */
 const reveals = document.querySelectorAll('.reveal');
 
@@ -78,3 +98,35 @@ function createConfetti(){
         }
     }, 20);
 }
+
+<!--------সেন্ড মেসেজ সেকশন---------></>
+const form = document.getElementById("contact-form");
+const status = document.getElementById("form-status");
+
+form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const data = new FormData(form);
+
+    try {
+        const response = await fetch(form.action, {
+            method: form.method,
+            body: data,
+            headers: {
+                Accept: "application/json",
+            },
+        });
+
+        if (response.ok) {
+            status.textContent = "✅ Message sent successfully!";
+            status.className = "success";
+            form.reset();
+        } else {
+            status.textContent = "❌ Oops! Something went wrong.";
+            status.className = "error";
+        }
+    } catch (error) {
+        status.textContent = "⚠ Network error. Try again.";
+        status.className = "error";
+    }
+});
