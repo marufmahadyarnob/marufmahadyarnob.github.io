@@ -393,7 +393,7 @@ tr:nth-child(even) {
 
 .contact-form {
     width: 100%;
-    max-width: 600px;
+    max-width: 100%;
     padding: 40px;
     border-radius: 20px;
     box-shadow: 0 20px 40px rgba(0,0,0,0.4);
