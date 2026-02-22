@@ -496,3 +496,41 @@ tr:nth-child(even) {
     color: #ff6b6b;
     opacity: 1;
 }
+
+.nav-menu2{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+
+.nav-btn2 {
+    padding: 8px 18px;
+    border: 2px solid var(--accent);
+    border-radius: 25px;
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+.nav-btn2:hover {
+    background: var(--accent);
+    color: var(--bg-main);
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(100,255,218,0.3);
+}
+<!--------------------UNDERLINE -------------------------->
+h2 {
+    position: relative;
+    display: inline-block;
+}
+
+h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;   /* পুরো underline */
+    height: 3px;
+    background: var(--accent);
+    border-radius: 2px;
+}
