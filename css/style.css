@@ -536,8 +536,9 @@ h2::after {
 }
 /* h2 like (I'm Maruf Mahady Arnob) */
 .h2-like {
-    font-size: 24px;      /* h2 এর size */
+    font-size: 30px;      /* h2 এর size */
     font-weight: bold;     /* h2 bold থাকে */
     margin: 20px 0;       /* h2 এর default top-bottom spacing */
     line-height: 1.2;     /* text spacing ঠিক রাখতে */
+    color: var(--accent);
 }
