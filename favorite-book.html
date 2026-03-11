@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="icon" type="image/png" href="images/favicon.png">
+
+<title>প্রিয় বইগুলো</title>
+
+<link rel="stylesheet" href="css/favorite-book-style.css">
+
+<!-- ===== Favicon of Browser Tab  ===== -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+<!-- ===== Preview for link sharing ===== -->
+    <meta property="og:title" content="Maruf Mahady Arnob | Portfolio">
+    <meta property="og:description" content="Welcome to my portfolio! Here you can explore my details, projects, designs and development journey.">
+    <meta property="og:image" content="https://marufmahadyarnob.github.io/images/preview.jpg">
+    <meta property="og:url" content="https://marufmahadyarnob.github.io">
+    <meta property="og:type" content="website"> 
+
+</head>
+
+<body>
+
+<header class="top-bar">
+
+<a href="index.html" class="back-btn">← Back</a>
+
+<input type="text" id="searchInput" placeholder="বই খুঁজুন...">
+
+<div class="category-filter" id="categoryFilter">
+
+<button class="cat-btn" data-cat="all">All</button>
+<button class="cat-btn" data-cat="Novel">Novel</button>
+<button class="cat-btn" data-cat="Horror">Horror</button>
+<button class="cat-btn" data-cat="History">History</button>
+<button class="cat-btn" data-cat="Mystery">Mystery</button>
+<button class="cat-btn" data-cat="Detective">Detective</button>
+
+</div>
+
+<div class="total-count" id="totalCount">Total Books: 0</div>
+
+</header>
+
+<section class="banner">
+<img src="images/favorite-book.jpg" class="banner-img">
+</section>
+
+<section class="book-container" id="bookContainer">
+
+<!-- Books will load from JSON -->
+
+</section>
+
+<button id="topBtn">↑</button>
+
+<script src="js/favorite-book.js"></script>
+
+</body>
+</html>

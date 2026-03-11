@@ -1,0 +1,301 @@
+[
+{
+"name":"শিষ",
+"author":"সায়ক আমান",
+"category":"Horror",
+"topic":"Horror, Psychological",
+"rating":"⭐⭐⭐⭐",
+"favorite":false,
+"img":"book-cover/shish.jpg",
+"short":"রহস্যময় এক শীষের আতঙ্ক...",
+"full":"এক অদ্ভুত শিষের শব্দকে কেন্দ্র করে ধীরে ধীরে তৈরি হয় ভয় ও মানসিক আতঙ্ক, যেখানে বাস্তব আর কল্পনার সীমা অস্পষ্ট হয়ে যায়।"
+},
+
+{
+"name":"অশ্বত্থ",
+"author":"অভিজ্ঞান রায়চৌধুরী",
+"category":"Horror",
+"topic":"Horror, Supernatural",
+"rating":"⭐⭐⭐",
+"favorite":false,
+"img":"book-cover/ashwattha.jpg",
+"short":"একটি প্রাচীন বৃক্ষকে ঘিরে রহস্য...",
+"full":"একটি পুরনো অশ্বত্থ গাছকে কেন্দ্র করে অদ্ভুত ও ভয়ঙ্কর ঘটনার সূচনা হয়।"
+},
+
+{
+"name":"পাশবিক",
+"author":"অনীল দেব",
+"category":"Horror",
+"topic":"Horror, Thriller",
+"rating":"⭐⭐⭐⭐",
+"favorite":false,
+"img":"book-cover/pashobik.jpg",
+"short":"মানবিকতার আড়ালে লুকানো অন্ধকার গল্প...",
+"full":"মানুষের ভেতরের পাশবিক রূপ ধীরে ধীরে প্রকাশ পায় এবং রহস্যময় ঘটনাগুলোকে আরও গভীর করে তোলে।"
+},
+
+{
+"name":"ক্যাকটাস",
+"author":"গেলর্ড স্যাবাটিনি",
+"category":"Horror",
+"topic":"Horror, Thriller",
+"rating":"⭐⭐⭐⭐⭐⭐",
+"favorite":true,
+"img":"book-cover/cactus.jpg",
+"short":"অদ্ভুত এক ক্যাকটাসকে ঘিরে রহস্যময় ঘটনা...",
+"full":"একটি অস্বাভাবিক ক্যাকটাসকে কেন্দ্র করে ভয়, রহস্য ও অজানা বিপদের কাহিনি।"
+},
+
+{
+"name":"কঙ্কগড়ের কঙ্কাল",
+"author":"সৈয়দ মুস্তাফা সিরাজ",
+"category":"Detective",
+"topic":"Detective, Mystery",
+"rating":"⭐⭐⭐⭐⭐",
+"favorite":false,
+"img":"book-cover/kankagarer-kankal.jpg",
+"short":"একটি রহস্যময় কঙ্কাল আবিষ্কারের গল্প...",
+"full":"কঙ্কগড়ে একটি কঙ্কাল আবিষ্কারকে কেন্দ্র করে শুরু হয় রহস্য ও তদন্তের কাহিনি।"
+},
+
+{
+"name":"পিশাচ",
+"author":"মঞ্জিল সেন",
+"category":"Horror",
+"topic":"Horror, Supernatural",
+"rating":"⭐⭐⭐⭐",
+"favorite":false,
+"img":"book-cover/pishach.jpg",
+"short":"অন্ধকার এক ভয়ঙ্কর সত্তার গল্প...",
+"full":"একটি অজানা পিশাচকে কেন্দ্র করে গড়ে ওঠা রহস্য ও ভয়ের গল্প।"
+},
+
+{
+"name":"আট মুনসির গাছ",
+"author":"রোহন রায়",
+"category":"Horror",
+"topic":"Horror, Mystery",
+"rating":"⭐⭐⭐⭐",
+"favorite":false,
+"img":"book-cover/aat-munsir-gach.jpg",
+"short":"একটি রহস্যময় গাছকে ঘিরে ভয়ের গল্প...",
+"full":"গ্রামের এক পুরনো গাছকে কেন্দ্র করে অদ্ভুত ঘটনার সূত্রপাত হয়।"
+},
+
+{
+"name":"পর্ণশবরীর শাপ",
+"author":"সৌভিক চক্রবর্তী",
+"category":"Horror",
+"topic":"Horror, Supernatural",
+"rating":"⭐⭐⭐⭐⭐",
+"favorite":true,
+"img":"book-cover/pornoshoborir-shap.jpg",
+"short":"এক অভিশপ্ত শক্তির ভয়ঙ্কর গল্প...",
+"full":"পর্ণশবরী দেবীর কিংবদন্তি ঘিরে ভয়ঙ্কর ও রহস্যময় ঘটনার বিবরণ।"
+},
+
+{
+"name":"হাকিনী",
+"author":"মুহাম্মদ আলমগীর তৈমূর",
+"category":"Horror",
+"topic":"Horror, Mystery",
+"rating":"⭐⭐⭐⭐",
+"favorite":false,
+"img":"book-cover/hakini.jpg",
+"short":"রহস্যময় ও ভয়ঙ্কর ঘটনার গল্প...",
+"full":"অজানা শক্তি এবং অভিশপ্ত এক গয়নার রহস্য নিয়ে অসমাপ্ত গল্প।"
+},
+
+{
+"name":"তিরোলের বালা",
+"author":"বিভূতিভূষণ বন্দ্যোপাধ্যায়",
+"category":"Horror",
+"topic":"Horror, Supernatural",
+"rating":"⭐⭐⭐⭐⭐",
+"favorite":false,
+"img":"book-cover/tiroler-bala.jpg",
+"short":"রহস্যময় অলৌকিক ঘটনার গল্প...",
+"full":"একটি অলৌকিক বালা ঘিরে অদ্ভুত ও ভয়ঙ্কর ঘটনার বর্ণনা।"
+},
+
+{
+"name":"হলুদ পোড়া",
+"author":"মানিক বন্দ্যোপাধ্যায়",
+"category":"Horror",
+"topic":"Horror, Psychological",
+"rating":"⭐⭐⭐⭐⭐",
+"favorite":false,
+"img":"book-cover/holud-pora.jpg",
+"short":"গ্রামের কুসংস্কার ও ভয়ের গল্প...",
+"full":"গ্রামের মানুষের বিশ্বাস, কুসংস্কার এবং অজানা ভয়ের মিশ্রণে তৈরি গল্প।"
+},
+
+{
+"name":"The Dancing Men",
+"author":"Arthur Conan Doyle",
+"category":"Detective",
+"topic":"Detective, Mystery",
+"rating":"⭐⭐⭐⭐⭐",
+"favorite":false,
+"img":"book-cover/dancing-man.jpg",
+"short":"নাচের মত চিহ্নে লেখা রহস্যময় বার্তা...",
+"full":"Sherlock Holmes একটি coded message এর রহস্য সমাধান করেন।"
+},
+
+{
+"name":"The Speckled Band",
+"author":"Arthur Conan Doyle",
+"category":"Detective",
+"topic":"Detective, Horror",
+"rating":"⭐⭐⭐⭐⭐",
+"favorite":true,
+"img":"book-cover/speckled-band.jpg",
+"short":"রহস্যময় মৃত্যুর তদন্ত...",
+"full":"একটি locked room mystery যেখানে Holmes আসল কারণ বের করেন।"
+},
+
+{
+"name":"The Beryl Coronet",
+"author":"Arthur Conan Doyle",
+"category":"Detective",
+"topic":"Detective",
+"rating":"⭐⭐⭐⭐",
+"favorite":false,
+"img":"book-cover/beryl-coronet.jpg",
+"short":"চুরি যাওয়া রাজমুকুট...",
+"full":"Holmes প্রকৃত অপরাধীকে খুঁজে বের করেন।"
+},
+
+{
+"name":"The Empty House",
+"author":"Arthur Conan Doyle",
+"category":"Detective",
+"topic":"Detective",
+"rating":"⭐⭐⭐⭐⭐",
+"favorite":false,
+"img":"book-cover/empty-house.jpg",
+"short":"Holmes এর ফিরে আসা...",
+"full":"Holmes তার শত্রুদের বিরুদ্ধে আবার লড়াই শুরু করেন।"
+},
+
+{
+"name":"পাগলা সাহেবের কবর",
+"author":"শীর্ষেন্দু মুখোপাধ্যায়",
+"category":"Horror",
+"topic":"Horror",
+"rating":"⭐⭐⭐⭐⭐",
+"favorite":true,
+"img":"book-cover/pagla.jpg",
+"short":"রহস্যময় কবর...",
+"full":"একটি ভয়ঙ্কর কবরের রহস্য নিয়ে গল্প।"
+},
+
+{
+"name":"গোসাইবাড়ির ভূত",
+"author":"শীর্ষেন্দু মুখোপাধ্যায়",
+"category":"Horror",
+"topic":"Horror",
+"rating":"⭐⭐⭐⭐",
+"favorite":false,
+"img":"book-cover/gosai.jpg",
+"short":"ভুতুড়ে বাড়ি...",
+"full":"একটি রহস্যময় বাড়ির ঘটনা।"
+},
+
+{
+"name":"ওখানে অমঙ্গল",
+"author":"তারাদাস বন্দ্যোপাধ্যায়",
+"category":"Horror",
+"topic":"Horror",
+"rating":"",
+"favorite":false,
+"img":"book-cover/omongol.jpg",
+"short":"অশুভ ঘটনা...",
+"full":"অজানা অশুভ শক্তির গল্প।"
+},
+
+{
+"name":"ইলিশ বাবা",
+"author":"হিমাদ্রিকিশোর দাশগুপ্ত",
+"category":"Horror",
+"topic":"Horror",
+"rating":"",
+"favorite":false,
+"img":"book-cover/ilish.jpg",
+"short":"রহস্যময় চরিত্র...",
+"full":"ভয়ঙ্কর অভিজ্ঞতার গল্প।"
+},
+
+{
+"name":"কালিন্দীর নৌকা",
+"author":"হিমাদ্রিকিশোর দাশগুপ্ত",
+"category":"Horror",
+"topic":"Horror",
+"rating":"",
+"favorite":false,
+"img":"book-cover/kalindi.jpg",
+"short":"ভুতুড়ে নৌকা...",
+"full":"একটি অভিশপ্ত নৌকার রহস্য।"
+},
+
+{
+"name":"মায়া",
+"author":"বিভূতিভূষণ বন্দ্যোপাধ্যায়",
+"category":"Mystery",
+"topic":"Mystery",
+"rating":"",
+"favorite":false,
+"img":"book-cover/maya.jpg",
+"short":"অদ্ভুত অনুভূতি...",
+"full":"অজানা অনুভূতির গল্প।"
+},
+
+{
+"name":"মনা",
+"author":"কৌশিক মজুমদার",
+"category":"Horror",
+"topic":"Horror",
+"rating":"⭐⭐⭐⭐⭐",
+"favorite":true,
+"img":"book-cover/mona.jpg",
+"short":"ভয়ের গল্প...",
+"full":"একটি অদ্ভুত অভিজ্ঞতা।"
+},
+
+{
+"name":"জুজুমা",
+"author":"কৌশিক মজুমদার",
+"category":"Horror",
+"topic":"Horror",
+"rating":"⭐⭐⭐⭐⭐",
+"favorite":true,
+"img":"book-cover/jujuma.jpg",
+"short":"ভুতুড়ে অভিজ্ঞতা...",
+"full":"অজানা আতঙ্কের গল্প।"
+},
+
+{
+"name":"খিদে",
+"author":"কৌশিক মজুমদার",
+"category":"Horror",
+"topic":"Horror",
+"rating":"",
+"favorite":false,
+"img":"book-cover/khide.jpg",
+"short":"ভয়ঙ্কর অনুভূতি...",
+"full":"মানসিক ভয়ের গল্প।"
+},
+
+{
+"name":"হাড়িকাঠ",
+"author":"অভিক সরকার",
+"category":"Horror",
+"topic":"Horror",
+"rating":"",
+"favorite":false,
+"img":"book-cover/harikath.jpg",
+"short":"ভয়ঙ্কর ঘটনা...",
+"full":"অন্ধকার রহস্যের গল্প।"
+}
+]
