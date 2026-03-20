@@ -180,3 +180,29 @@ grid-template-columns:1fr;
 }
 
 }
+
+/* SEARCH BOX */
+.search-box{
+margin-bottom:20px;
+}
+
+.search-box input{
+width:100%;
+max-width:400px;
+padding:10px 15px;
+border-radius:25px;
+border:none;
+outline:none;
+}
+
+/* ORDER BUTTON */
+.order-btn{
+margin-top:8px;
+padding:6px 12px;
+border:none;
+border-radius:20px;
+background:linear-gradient(45deg,cyan,blue);
+color:white;
+cursor:pointer;
+font-size:12px;
+}
