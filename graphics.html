@@ -9,15 +9,8 @@
 
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<!-- ===== Favicon of Browser Tab  ===== -->
-    <link rel="icon" type="image/png" href="images/favicon.png">
 
-<!-- ===== Preview for link sharing ===== -->
-    <meta property="og:title" content="Maruf Mahady Arnob | Portfolio">
-    <meta property="og:description" content="Welcome to my portfolio! Here you can explore my details, projects, designs and development journey.">
-    <meta property="og:image" content="https://marufmahadyarnob.github.io/images/preview.jpg">
-    <meta property="og:url" content="https://marufmahadyarnob.github.io">
-    <meta property="og:type" content="website"> 
+<link rel="icon" type="image/png" href="images/favicon.png">
 
 </head>
 <body>
@@ -29,75 +22,65 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 <h1 class="title">My Graphics Portfolio</h1>
 <p class="subtitle">Poster, Banner & Social Media Design Works</p>
 
-
-<!-- FILTER BUTTONS -->
-
-<div class="filters">
-    <button class="filter-btn active" data-filter="all">All</button>
-    <button class="filter-btn" data-filter="poster">Poster</button>
-    <button class="filter-btn" data-filter="banner">Banner</button>
-    <button class="filter-btn" data-filter="social">Social Post</button>
+<!-- SEARCH BOX -->
+<div class="search-box">
+<input type="text" id="searchInput" placeholder="Search design...">
 </div>
 
-
+<!-- FILTER BUTTONS -->
+<div class="filters">
+<button class="filter-btn active" data-filter="all">All</button>
+<button class="filter-btn" data-filter="poster">Poster</button>
+<button class="filter-btn" data-filter="banner">Banner</button>
+<button class="filter-btn" data-filter="social">Social Post</button>
+</div>
 
 <!-- GALLERY -->
-
 <div class="gallery">
 
 <div class="card poster">
 <img src="images/projects/graphics/poster1.jpg">
 <div class="overlay">
 <h3>Poster Design</h3>
+<button class="order-btn">Order Now</button>
 </div>
 </div>
-
 
 <div class="card banner">
 <img src="https://picsum.photos/400/252">
 <div class="overlay">
 <h3>Banner Design</h3>
+<button class="order-btn">Order Now</button>
 </div>
 </div>
-
 
 <div class="card social">
 <img src="https://picsum.photos/400/253">
 <div class="overlay">
 <h3>Social Media Post</h3>
+<button class="order-btn">Order Now</button>
 </div>
 </div>
 
 </div>
 
-
-
-<!-- CONTACT SECTION -->
-
+<!-- CONTACT -->
 <div class="contact-cta">
-
 <h2>Need Graphics Design?</h2>
-
 <p>Contact me for posters, banners, social media posts & thumbnails.</p>
 
 <a href="contact.html" class="hire-btn">
 <i class="fa fa-envelope"></i> Hire Me
 </a>
-
 </div>
 
 </div>
-
-
 
 <!-- LIGHTBOX -->
-
 <div id="lightbox">
 <span class="close">&times;</span>
 <img id="lightbox-img">
 </div>
-
-
 
 <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
 <script src="js/graphics.js"></script>
