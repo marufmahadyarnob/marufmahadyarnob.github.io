@@ -64,4 +64,24 @@
     "image": "images/projects/graphics/ad-08.jpg",
     "title": "Simple School Admission | স্কুল ভর্তি বিজ্ঞপ্তি (কোড: AD-08)"
   }
+  {
+    "category": "eid",
+    "image": "images/projects/graphics/eid-04.jpg",
+    "title": "Eid Poster | ঈদ পোস্টার (কোড: EID-04)"
+  },
+  {
+    "category": "eid",
+    "image": "images/projects/graphics/eid-05.jpg",
+    "title": "Eid Poster | ঈদ পোস্টার (কোড: EID-05)"
+  },
+  {
+    "category": "eid",
+    "image": "images/projects/graphics/eid-06.jpg",
+    "title": "Eid Poster | ঈদ পোস্টার (কোড: EID-06)"
+  },
+  {
+    "category": "eid",
+    "image": "images/projects/graphics/eid-07.jpg",
+    "title": "Eid Poster | ঈদ পোস্টার (কোড: EID-07)"
+  },
 ]
