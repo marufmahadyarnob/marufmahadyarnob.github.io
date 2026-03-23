@@ -27,12 +27,12 @@
   {
     "category": "december",
     "image": "images/projects/graphics/de-01.jpg",
-    "title": "16 December | ১৬ ডিসেম্বর (কোড: DE-01)"
+    "title": "16 December Victory Day | ১৬ ডিসেম্বর বিজয় দিবস (কোড: DE-01)"
   },
   {
     "category": "february",
     "image": "images/projects/graphics/fe-01.jpg",
-    "title": "21 February | ২১ ফেব্রুয়ারি (কোড: FE-01)"
+    "title": "21 February International Mother Language Day | ২১ ফেব্রুয়ারি আন্তর্জাতিক মাতৃভাষা দিবস (কোড: FE-01)"
   },
   {
     "category": "admission",
@@ -87,6 +87,6 @@
   {
     "category": "march",
     "image": "images/projects/graphics/mar-01.jpg",
-    "title": "26 March | ২৬ মার্চ (কোড: MAR-01)"
+    "title": "26 March Independence Day | ২৬ মার্চ স্বাধীনতা দিবস (কোড: MAR-01)"
   }
 ]
