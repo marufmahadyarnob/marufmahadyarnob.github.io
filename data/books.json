@@ -6,7 +6,7 @@
 "topic":"Ghost Hunting, Supernatural Adventure",
 "rating":"⭐⭐⭐⭐",
 "favorite":false,
-"img":"book-cover/bhut-shikari-mejokorta.jpg",
+"img":"/book-cover/bhut-shikari-mejokorta.jpg",
 "short":"ভূত শিকারের নামে শুরু হয় অদ্ভুত সব অভিজ্ঞতা...",
 "full":"মেজোকর্তার ভৌতিক অনুসন্ধানে একের পর এক অলৌকিক ঘটনার মুখোমুখি হতে হয়, যেখানে রোমাঞ্চ, কৌতুক আর শিহরণ একসঙ্গে মিশে যায়।"
 },
@@ -17,7 +17,7 @@
 "topic":"Psychological, Supernatural",
 "rating":"⭐⭐⭐⭐",
 "favorite":false,
-"img":"book-cover/khudito-jibon.jpg",
+"img":"/book-cover/khudito-jibon.jpg",
 "short":"অতৃপ্ত অস্তিত্বের শীতল ছায়া...",
 "full":"অপূর্ণতা, আকাঙ্ক্ষা আর অদ্ভুত উপস্থিতিকে ঘিরে গড়ে ওঠে এমন এক কাহিনি, যেখানে জীবনের ক্ষুধা মৃত্যুর পরও শেষ হয় না।"
 },
@@ -28,7 +28,7 @@
 "topic":"Atmospheric Horror, Mystery",
 "rating":"⭐⭐⭐⭐",
 "favorite":false,
-"img":"book-cover/kamra-ar-amra.jpg",
+"img":"/book-cover/kamra-ar-amra.jpg",
 "short":"এক কামরার ভেতরে জমে ওঠা অস্বস্তিকর রহস্য...",
 "full":"সীমিত এক ঘর বা কামরার আবহেই তৈরি হয় অদ্ভুত ভয়, অজানা উপস্থিতি এবং এমন সব ঘটনা, যা ধীরে ধীরে শীতল আতঙ্কে পরিণত হয়।"
 },
@@ -39,7 +39,7 @@
 "topic":"Psychological, Dark Mystery",
 "rating":"⭐⭐⭐⭐",
 "favorite":false,
-"img":"book-cover/unmesh.jpg",
+"img":"/book-cover/unmesh.jpg",
 "short":"এক অদ্ভুত উপলব্ধির সঙ্গে জেগে ওঠে ভয়...",
 "full":"মানসিক পরিবর্তন, অস্বস্তিকর অনুভব এবং ধীরে ধীরে উন্মোচিত রহস্যের মধ্য দিয়ে এই কাহিনি তৈরি করে গভীর শিহরণ।"
 },
@@ -50,7 +50,7 @@
 "topic":"Supernatural, Folklore",
 "rating":"⭐⭐⭐⭐",
 "favorite":false,
-"img":"book-cover/kalo-morog.jpg",
+"img":"/book-cover/kalo-morog.jpg",
 "short":"লোককথার ছায়ায় অশুভ এক প্রতীকের আবির্ভাব...",
 "full":"এক কালো মোরগকে ঘিরে তৈরি হয় অদ্ভুত ও ভয়াল সব ইঙ্গিত, যেখানে গ্রামীণ বিশ্বাস, রহস্য আর অতিপ্রাকৃত শক্তি একত্রে কাজ করে।"
 },
@@ -61,7 +61,7 @@
 "topic":"Ghost Story, Mystery",
 "rating":"⭐⭐⭐⭐",
 "favorite":false,
-"img":"book-cover/moktar-bhut.jpg",
+"img":"/book-cover/moktar-bhut.jpg",
 "short":"এক মৃত মানুষের অদ্ভুত প্রত্যাবর্তনের কাহিনি...",
 "full":"রহস্যময় এক ভূতুড়ে উপস্থিতিকে ঘিরে এগোতে থাকে কাহিনি, যেখানে কৌতুক, শিহরণ ও অজানার মিশ্রণ পাঠককে বেঁধে রাখে।"
 },
@@ -72,7 +72,7 @@
 "topic":"Supernatural, Dark Mystery",
 "rating":"⭐⭐⭐⭐",
 "favorite":false,
-"img":"book-cover/rokto-khadyot.jpg",
+"img":"/book-cover/rokto-khadyot.jpg",
 "short":"অদ্ভুত আলোর আড়ালে লুকিয়ে থাকা রক্তাক্ত রহস্য...",
 "full":"এক অস্বাভাবিক ঘটনার সূত্র ধরে ধীরে ধীরে প্রকাশ পায় এমন এক ভয়ঙ্কর সত্য, যেখানে অশুভ শক্তি আর মৃত্যুর ছায়া পাশাপাশি চলে।"
 },
@@ -83,7 +83,7 @@
 "topic":"Ghost Story, Supernatural",
 "rating":"⭐⭐⭐⭐",
 "favorite":false,
-"img":"book-cover/bhut-charit.jpg",
+"img":"/book-cover/bhut-charit.jpg",
 "short":"ভূতেদের অদ্ভুত অভিজ্ঞতার রোমাঞ্চকর বর্ণনা...",
 "full":"ভূতুড়ে ঘটনাগুলোর বর্ণনায় তৈরি হয় রহস্য, ভয় এবং কৌতূহলের এমন এক পরিবেশ, যা পাঠককে শিহরিত করে রাখে।"
 },
@@ -94,7 +94,7 @@
 "topic":"Ghost Story, Mystery",
 "rating":"⭐⭐⭐⭐",
 "favorite":false,
-"img":"book-cover/bhuture-kando.jpg",
+"img":"/book-cover/bhuture-kando.jpg",
 "short":"একের পর এক অদ্ভুত ঘটনার শীতল অভিজ্ঞতা...",
 "full":"অলৌকিক ঘটনার সূত্র ধরে এগোতে থাকে এক ভৌতিক কাহিনি, যেখানে প্রতিটি মুহূর্তে লুকিয়ে থাকে নতুন চমক ও শিহরণ।"
 },
@@ -105,7 +105,7 @@
 "topic":"Psychological, Supernatural",
 "rating":"⭐⭐⭐⭐",
 "favorite":false,
-"img":"book-cover/binod-daktar.jpg",
+"img":"/book-cover/binod-daktar.jpg",
 "short":"এক চিকিৎসককে ঘিরে অস্বস্তিকর ও ভয়াল রহস্য...",
 "full":"একজন ডাক্তারের জীবন ও অভিজ্ঞতার আড়ালে ধীরে ধীরে প্রকাশ পায় এমন কিছু ঘটনা, যা যুক্তির সীমানা ছাড়িয়ে ভয়ের নতুন রূপ দেখায়।"
 },
@@ -116,7 +116,7 @@
 "topic":"Dark Mystery, Psychological Horror",
 "rating":"⭐⭐⭐⭐",
 "favorite":false,
-"img":"book-cover/fashir-asami.jpg",
+"img":"/book-cover/fashir-asami.jpg",
 "short":"মৃত্যুদণ্ডপ্রাপ্ত এক মানুষের ঘিরে শীতল রহস্য...",
 "full":"ফাঁসির দণ্ডপ্রাপ্ত একজনকে কেন্দ্র করে তৈরি হয় অপরাধ, আতঙ্ক ও অদ্ভুত মানসিক চাপের গল্প, যেখানে সত্য আরও ভয়ংকর হয়ে ওঠে।"
 },
@@ -127,7 +127,7 @@
 "topic":"Psychological Horror, Dark Ending",
 "rating":"⭐⭐⭐⭐",
 "favorite":false,
-"img":"book-cover/somapti.jpg",
+"img":"/book-cover/somapti.jpg",
 "short":"শেষের মধ্যেই লুকিয়ে থাকা ভয়ংকর শুরু...",
 "full":"একটি আপাত সমাপ্তি ধীরে ধীরে উন্মোচন করে গভীর অন্ধকার, মানসিক অস্থিরতা ও অপ্রত্যাশিত ভয়ের এমন এক রূপ, যা দীর্ঘস্থায়ী প্রভাব ফেলে।"
 },
@@ -138,7 +138,7 @@
 "topic":"Mystery, Atmospheric Horror",
 "rating":"⭐⭐⭐⭐",
 "favorite":false,
-"img":"book-cover/samudrik.jpg",
+"img":"/book-cover/samudrik.jpg",
 "short":"সমুদ্রের গর্জনের সঙ্গে মিশে থাকা এক অদ্ভুত আতঙ্ক...",
 "full":"সমুদ্রকে ঘিরে তৈরি হয় রহস্য, নিঃসঙ্গতা ও অশুভ ইঙ্গিতের এক শিহরণজাগানো আবহ, যেখানে অজানাই হয়ে ওঠে সবচেয়ে বড় ভয়।"
 },
@@ -149,7 +149,7 @@
 "topic":"Psychological Horror, Mystery",
 "rating":"⭐⭐⭐⭐",
 "favorite":false,
-"img":"book-cover/bacha-mora.jpg",
+"img":"/book-cover/bacha-mora.jpg",
 "short":"জীবন-মৃত্যুর মাঝামাঝি এক ভয়ংকর টানাপোড়েন...",
 "full":"বেঁচে থাকা আর মরে যাওয়ার সীমারেখাকে ঘিরে গড়ে ওঠে গভীর মানসিক ভয় ও অস্বস্তির কাহিনি, যেখানে প্রতিটি মুহূর্তই অনিশ্চিত।"
 },
@@ -160,7 +160,7 @@
 "topic":"Ghost Story, Supernatural",
 "rating":"⭐⭐⭐⭐",
 "favorite":false,
-"img":"book-cover/asal-bhuter-golpo.jpg",
+"img":"/book-cover/asal-bhuter-golpo.jpg",
 "short":"ভূতের গল্প, কিন্তু অস্বাভাবিকভাবে বাস্তব...",
 "full":"অলৌকিক অভিজ্ঞতার আবহে সাজানো এই কাহিনিতে ধীরে ধীরে স্পষ্ট হয় এমন এক ভয়, যা গল্পের গণ্ডি ছাড়িয়ে বাস্তব অনুভূত হয়।"
 },
@@ -171,7 +171,7 @@
 "topic":"Ghost Story, Supernatural",
 "rating":"⭐⭐⭐⭐",
 "favorite":false,
-"img":"book-cover/bhuter-raja.jpg",
+"img":"/book-cover/bhuter-raja.jpg",
 "short":"অশরীরীদের জগতে এক ভয়াল কর্তৃত্বের ছায়া...",
 "full":"ভূতুড়ে আবহ, রহস্যময় ঘটনা এবং অলৌকিক শক্তির মিশেলে এই কাহিনি তৈরি করে শিহরণ ও কৌতূহলের দুর্দান্ত সমন্বয়।"
 },
@@ -182,7 +182,7 @@
 "topic":"Haunted House, Mystery",
 "rating":"⭐⭐⭐⭐",
 "favorite":false,
-"img":"book-cover/rudranarayaner-baganbari.jpg",
+"img":"/book-cover/rudranarayaner-baganbari.jpg",
 "short":"এক বাগানবাড়ির ভেতরে জমে থাকা অন্ধকার রহস্য...",
 "full":"রুদ্রনারায়নের পুরনো বাগানবাড়িকে কেন্দ্র করে উন্মোচিত হয় অতীত, ভয় এবং অদ্ভুত ঘটনার এমন এক জটিল জাল, যা সহজে ভুলে থাকা যায় না।"
 },
@@ -193,7 +193,7 @@
 "topic":"Haunted House, Supernatural",
 "rating":"⭐⭐⭐⭐",
 "favorite":false,
-"img":"book-cover/olaitolar-baganbari.jpg",
+"img":"/book-cover/olaitolar-baganbari.jpg",
 "short":"এক পরিত্যক্ত বাগানবাড়ির ভৌতিক গোপন ইতিহাস...",
 "full":"নির্জন এক বাগানবাড়িকে ঘিরে জমে ওঠে অদ্ভুত সব ঘটনা, যেখানে অতীতের ছায়া আজও জীবন্ত হয়ে তাড়া করে বর্তমানকে।"
 },
@@ -204,7 +204,7 @@
 "topic":"Mystery, Atmospheric Horror",
 "rating":"⭐⭐⭐⭐⭐⭐⭐",
 "favorite":false,
-"img":"book-cover/mosmai-orchid.jpg",
+"img":"/book-cover/mosmai-orchid.jpg",
 "short":"এক বিরল অর্কিডের আড়ালে লুকানো অস্বাভাবিক রহস্য...",
 "full":"দুর্লভ এক অর্কিডকে কেন্দ্র করে আবর্তিত হয় অদ্ভুত সব ঘটনা, যেখানে প্রকৃতির সৌন্দর্যও হয়ে ওঠে ভয়ের মুখোশ।"
 },
@@ -215,7 +215,7 @@
 "topic":"Supernatural, Gothic",
 "rating":"⭐⭐⭐⭐",
 "favorite":false,
-"img":"book-cover/jongol-barir-bourani.jpg",
+"img":"/book-cover/jongol-barir-bourani.jpg",
 "short":"জঙ্গলের নির্জনতায় হারিয়ে যাওয়া এক ভৌতিক কিংবদন্তি...",
 "full":"নির্জন জঙ্গলবাড়িকে ঘিরে বোনা হয় এক রহস্যময় কাহিনি, যেখানে অতীতের অভিশাপ আর অদৃশ্য উপস্থিতি মিলে তৈরি করে গভীর আতঙ্ক।"
 },
@@ -226,7 +226,7 @@
 "topic":"Psychological, Supernatural",
 "rating":"⭐⭐⭐⭐",
 "favorite":false,
-"img":"book-cover/ghatbabu.jpg",
+"img":"/book-cover/ghatbabu.jpg",
 "short":"ঘাটের নীরবতায় জমে থাকা অজানা ভয়...",
 "full":"এক রহস্যময় চরিত্র ও পরিবেশকে ঘিরে ধীরে ধীরে গড়ে ওঠে এমন এক অস্বস্তিকর কাহিনি, যেখানে বাস্তব ও অদ্ভুতের সীমানা মুছে যায়।"
 },
@@ -237,7 +237,7 @@
 "topic":"Creature Horror, Mystery",
 "rating":"⭐⭐⭐⭐",
 "favorite":false,
-"img":"book-cover/koral-korkot.jpg",
+"img":"/book-cover/koral-korkot.jpg",
 "short":"অদ্ভুত এক ভয়ংকর সত্তার ত্রাস...",
 "full":"অস্বাভাবিক ও আতঙ্কজনক এক সত্তাকে ঘিরে শুরু হয় রহস্য ও ভয়ের কাহিনি, যেখানে প্রতিটি আবিষ্কারই আরও বিপজ্জনক সত্যের দিকে নিয়ে যায়।"
 },
@@ -248,7 +248,7 @@
 "topic":"Psychological Horror, Dark Mystery",
 "rating":"⭐⭐⭐⭐",
 "favorite":false,
-"img":"book-cover/ekhane-ondhokar.jpg",
+"img":"/book-cover/ekhane-ondhokar.jpg",
 "short":"অন্ধকারের ভেতরে লুকিয়ে থাকা মানসিক ভয়...",
 "full":"এক গভীর অন্ধকারময় পরিবেশে ধীরে ধীরে প্রকাশ পায় মানুষের অন্তর্গত ভয়, অস্থিরতা এবং এমন এক রহস্য, যা থেকে পালানো কঠিন।"
 },
@@ -259,7 +259,7 @@
 "topic":"Psychological Horror, Mystery",
 "rating":"⭐⭐⭐⭐",
 "favorite":false,
-"img":"book-cover/nomoskar.jpg",
+"img":"/book-cover/nomoskar.jpg",
 "short":"সাধারণ সম্ভাষণের আড়ালে লুকিয়ে থাকা অস্বস্তিকর অন্ধকার...",
 "full":"একটি আপাত স্বাভাবিক ঘটনার ভেতর ধীরে ধীরে উন্মোচিত হয় অদ্ভুত ভয়, মানসিক টানাপোড়েন এবং এমন এক রহস্য, যা সহজে ব্যাখ্যা করা যায় না।"
 },
@@ -270,7 +270,7 @@
 "topic":"Classic Horror, Supernatural",
 "rating":"⭐⭐⭐⭐",
 "favorite":false,
-"img":"book-cover/sumach.jpg",
+"img":"/book-cover/sumach.jpg",
 "short":"অতীতের ছায়ায় মোড়া এক অদ্ভুত আতঙ্ক...",
 "full":"এক রহস্যময় ঘটনার সূত্র ধরে ধীরে ধীরে প্রকাশ পায় এমন এক ভয়াবহ সত্য, যেখানে পরিবেশ, স্মৃতি আর অতিপ্রাকৃত শক্তি এক হয়ে ওঠে।"
 },
@@ -281,7 +281,7 @@
 "topic":"Occult, Supernatural",
 "rating":"⭐⭐⭐⭐",
 "favorite":false,
-"img":"book-cover/charchika.jpg",
+"img":"/book-cover/charchika.jpg",
 "short":"অশুভ শক্তির মুখোমুখি এক ভয়াল অনুসন্ধান...",
 "full":"সনৎ ঠাকুরের অভিজ্ঞতায় উন্মোচিত হয় চর্চিকাকে ঘিরে এক ভীতিকর অলৌকিক রহস্য, যেখানে প্রতিটি পদক্ষেপই ডেকে আনে নতুন বিপদ।"
 },
@@ -292,7 +292,7 @@
 "topic":"Mystery, Supernatural",
 "rating":"⭐⭐⭐⭐",
 "favorite":false,
-"img":"book-cover/kalo-golap.jpg",
+"img":"/book-cover/kalo-golap.jpg",
 "short":"এক কালো গোলাপের সঙ্গে জড়ানো অদ্ভুত রহস্য...",
 "full":"অস্বাভাবিক এক কালো গোলাপকে কেন্দ্র করে শুরু হয় ভয়, সন্দেহ এবং অশুভ ইঙ্গিতের গল্প, যা ধীরে ধীরে নিয়ে যায় অন্ধকারের গভীরে।"
 },
@@ -303,7 +303,7 @@
 "topic":"Gothic Horror, Supernatural",
 "rating":"⭐⭐⭐⭐",
 "favorite":false,
-"img":"book-cover/the-judges-house.jpg",
+"img":"/book-cover/the-judges-house.jpg",
 "short":"এক পুরনো বাড়িতে জমে থাকা ভয়াল অতীত...",
 "full":"নির্জন এক পুরনো বাড়িতে আশ্রয় নিতে গিয়ে একজন ছাত্র মুখোমুখি হয় এমন এক সন্ত্রাসের, যা মৃত অতীতকে বর্তমানের দুঃস্বপ্নে পরিণত করে।"
 },
@@ -314,7 +314,7 @@
 "topic":"Ghost Story, Psychological",
 "rating":"⭐⭐⭐⭐",
 "favorite":false,
-"img":"book-cover/ashoriri.jpg",
+"img":"/book-cover/ashoriri.jpg",
 "short":"অদেখা উপস্থিতির শীতল অনুভব...",
 "full":"এক রহস্যময় অশরীরী উপস্থিতিকে ঘিরে গড়ে ওঠে এমন এক ভয়ের পরিবেশ, যেখানে অদৃশ্যই হয়ে ওঠে সবচেয়ে বাস্তব আতঙ্ক।"
 },
@@ -325,7 +325,7 @@
 "topic":"Curse, Supernatural",
 "rating":"⭐⭐⭐⭐",
 "favorite":false,
-"img":"book-cover/abhishapto.jpg",
+"img":"/book-cover/abhishapto.jpg",
 "short":"অভিশাপের ছায়ায় ঢেকে যাওয়া এক ভয়ঙ্কর কাহিনি...",
 "full":"এক অশুভ অভিশাপের প্রভাব ধীরে ধীরে গ্রাস করে মানুষ ও পরিবেশকে, যেখানে মুক্তির চেয়ে ভয়ই বেশি সত্য হয়ে ওঠে।"
 },
@@ -336,7 +336,7 @@
 "topic":"Occult, Supernatural",
 "rating":"⭐⭐⭐⭐",
 "favorite":false,
-"img":"book-cover/jolpishach.jpg",
+"img":"/book-cover/jolpishach.jpg",
 "short":"জলের গভীরে লুকিয়ে থাকা এক ভয়াল সত্তা...",
 "full":"তারানাথ তান্ত্রিকের অনুসন্ধানে উন্মোচিত হয় এমন এক অশুভ জলসত্তার রহস্য, যার উপস্থিতি মানেই মৃত্যু, আতঙ্ক আর অদৃশ্য অভিশাপ।"
 },
@@ -347,7 +347,7 @@
 "topic":"Horror, Psychological",
 "rating":"⭐⭐⭐⭐",
 "favorite":false,
-"img":"book-cover/swar.jpg",
+"img":"/book-cover/swar.jpg",
 "short":"এক অদ্ভুত কণ্ঠস্বরের ভয়াল অনুসরণ...",
 "full":"অচেনা এক স্বরকে ঘিরে গড়ে ওঠে শিহরণজাগানো মানসিক ভয়, যেখানে বাস্তবতা, স্মৃতি আর আতঙ্ক একে অন্যের সঙ্গে মিশে যায়।"
 },
@@ -358,7 +358,7 @@
 "topic":"Horror, Mystery",
 "rating":"⭐⭐⭐⭐",
 "favorite":false,
-"img":"book-cover/yazdargider-hire.jpg",
+"img":"/book-cover/yazdargider-hire.jpg",
 "short":"অমূল্য রত্নের সঙ্গে জড়িয়ে থাকা অশুভ রহস্য...",
 "full":"এক দুর্লভ হীরেকে কেন্দ্র করে আবর্তিত হয় রহস্য, লোভ এবং অজানা ভয়ের ছায়া, যেখানে প্রতিটি সূত্রই নিয়ে যায় আরও গভীর অন্ধকারে।"
 },
@@ -369,7 +369,7 @@
 "topic":"Occult, Supernatural",
 "rating":"⭐⭐⭐⭐",
 "favorite":false,
-"img":"book-cover/ashchorjo-duniya.jpg",
+"img":"/book-cover/ashchorjo-duniya.jpg",
 "short":"তারানাথের চোখে অদ্ভুত ও অলৌকিক জগতের দরজা...",
 "full":"তারানাথ তান্ত্রিকের অভিজ্ঞতায় খুলে যায় এক বিস্ময়কর অথচ ভীতিকর জগৎ, যেখানে অতিপ্রাকৃত শক্তি ও অজানা রহস্য পাশাপাশি হেঁটে চলে।"
 },
@@ -381,7 +381,7 @@
 "topic":"Horror, Psychological",
 "rating":"⭐⭐⭐⭐",
 "favorite":false,
-"img":"book-cover/rhyme.jpg",
+"img":"/book-cover/rhyme.jpg",
 "short":"ছন্দের ভেতরে লুকিয়ে থাকা এক অস্বস্তিকর অন্ধকার...",
 "full":"একটি আপাত নিরীহ রাইম ধীরে ধীরে উন্মোচন করে ভয়, রহস্য এবং মানসিক অস্থিরতার স্তর, যেখানে পরিচিত শব্দও হয়ে ওঠে আতঙ্কের উৎস।"
 },
@@ -393,7 +393,7 @@
 "topic":"Horror, Psychological",
 "rating":"⭐⭐⭐⭐",
 "favorite":false,
-"img":"book-cover/shish.jpg",
+"img":"/book-cover/shish.jpg",
 "short":"রহস্যময় এক শীষের আতঙ্ক...",
 "full":"এক অদ্ভুত শিষের শব্দকে কেন্দ্র করে ধীরে ধীরে তৈরি হয় ভয় ও মানসিক আতঙ্ক, যেখানে বাস্তব আর কল্পনার সীমা অস্পষ্ট হয়ে যায়।"
 },
@@ -405,7 +405,7 @@
 "topic":"Horror, Supernatural",
 "rating":"⭐⭐⭐",
 "favorite":false,
-"img":"book-cover/ashwattha.jpg",
+"img":"/book-cover/ashwattha.jpg",
 "short":"একটি প্রাচীন বৃক্ষকে ঘিরে রহস্য...",
 "full":"একটি পুরনো অশ্বত্থ গাছকে কেন্দ্র করে অদ্ভুত ও ভয়ঙ্কর ঘটনার সূচনা হয়।"
 },
@@ -417,7 +417,7 @@
 "topic":"Horror, Thriller",
 "rating":"⭐⭐⭐⭐",
 "favorite":false,
-"img":"book-cover/pashobik.jpg",
+"img":"/book-cover/pashobik.jpg",
 "short":"মানবিকতার আড়ালে লুকানো অন্ধকার গল্প...",
 "full":"মানুষের ভেতরের পাশবিক রূপ ধীরে ধীরে প্রকাশ পায় এবং রহস্যময় ঘটনাগুলোকে আরও গভীর করে তোলে।"
 },
@@ -429,7 +429,7 @@
 "topic":"Horror, Thriller",
 "rating":"⭐⭐⭐⭐⭐⭐",
 "favorite":true,
-"img":"book-cover/cactus.jpg",
+"img":"/book-cover/cactus.jpg",
 "short":"অদ্ভুত এক ক্যাকটাসকে ঘিরে রহস্যময় ঘটনা...",
 "full":"একটি অস্বাভাবিক ক্যাকটাসকে কেন্দ্র করে ভয়, রহস্য ও অজানা বিপদের কাহিনি।"
 },
@@ -441,7 +441,7 @@
 "topic":"Detective, Mystery",
 "rating":"⭐⭐⭐⭐⭐",
 "favorite":false,
-"img":"book-cover/kankagarer-kankal.jpg",
+"img":"/book-cover/kankagarer-kankal.jpg",
 "short":"একটি রহস্যময় কঙ্কাল আবিষ্কারের গল্প...",
 "full":"কঙ্কগড়ে একটি কঙ্কাল আবিষ্কারকে কেন্দ্র করে শুরু হয় রহস্য ও তদন্তের কাহিনি।"
 },
@@ -453,7 +453,7 @@
 "topic":"Horror, Supernatural",
 "rating":"⭐⭐⭐⭐",
 "favorite":false,
-"img":"book-cover/pishach.jpg",
+"img":"/book-cover/pishach.jpg",
 "short":"অন্ধকার এক ভয়ঙ্কর সত্তার গল্প...",
 "full":"একটি অজানা পিশাচকে কেন্দ্র করে গড়ে ওঠা রহস্য ও ভয়ের গল্প।"
 },
@@ -465,7 +465,7 @@
 "topic":"Horror, Mystery",
 "rating":"⭐⭐⭐⭐",
 "favorite":false,
-"img":"book-cover/aat-munsir-gach.jpg",
+"img":"/book-cover/aat-munsir-gach.jpg",
 "short":"একটি রহস্যময় গাছকে ঘিরে ভয়ের গল্প...",
 "full":"গ্রামের এক পুরনো গাছকে কেন্দ্র করে অদ্ভুত ঘটনার সূত্রপাত হয়।"
 },
@@ -477,7 +477,7 @@
 "topic":"Horror, Supernatural",
 "rating":"⭐⭐⭐⭐⭐",
 "favorite":true,
-"img":"book-cover/pornoshoborir-shap.jpg",
+"img":"/book-cover/pornoshoborir-shap.jpg",
 "short":"এক অভিশপ্ত শক্তির ভয়ঙ্কর গল্প...",
 "full":"পর্ণশবরী দেবীর কিংবদন্তি ঘিরে ভয়ঙ্কর ও রহস্যময় ঘটনার বিবরণ।"
 },
@@ -489,7 +489,7 @@
 "topic":"Horror, Mystery",
 "rating":"⭐⭐⭐⭐",
 "favorite":false,
-"img":"book-cover/hakini.jpg",
+"img":"/book-cover/hakini.jpg",
 "short":"রহস্যময় ও ভয়ঙ্কর ঘটনার গল্প...",
 "full":"অজানা শক্তি এবং অভিশপ্ত এক গয়নার রহস্য নিয়ে অসমাপ্ত গল্প।"
 },
@@ -501,7 +501,7 @@
 "topic":"Horror, Supernatural",
 "rating":"⭐⭐⭐⭐⭐",
 "favorite":false,
-"img":"book-cover/tiroler-bala.jpg",
+"img":"/book-cover/tiroler-bala.jpg",
 "short":"রহস্যময় অলৌকিক ঘটনার গল্প...",
 "full":"একটি অলৌকিক বালা ঘিরে অদ্ভুত ও ভয়ঙ্কর ঘটনার বর্ণনা।"
 },
@@ -513,7 +513,7 @@
 "topic":"Horror, Psychological",
 "rating":"⭐⭐⭐⭐⭐",
 "favorite":false,
-"img":"book-cover/holud-pora.jpg",
+"img":"/book-cover/holud-pora.jpg",
 "short":"গ্রামের কুসংস্কার ও ভয়ের গল্প...",
 "full":"গ্রামের মানুষের বিশ্বাস, কুসংস্কার এবং অজানা ভয়ের মিশ্রণে তৈরি গল্প।"
 },
@@ -525,7 +525,7 @@
 "topic":"Detective, Mystery",
 "rating":"⭐⭐⭐⭐⭐",
 "favorite":false,
-"img":"book-cover/dancing-man.jpg",
+"img":"/book-cover/dancing-man.jpg",
 "short":"নাচের মত চিহ্নে লেখা রহস্যময় বার্তা...",
 "full":"Sherlock Holmes একটি coded message এর রহস্য সমাধান করেন।"
 },
@@ -537,7 +537,7 @@
 "topic":"Detective, Horror",
 "rating":"⭐⭐⭐⭐⭐",
 "favorite":true,
-"img":"book-cover/speckled-band.jpg",
+"img":"/book-cover/speckled-band.jpg",
 "short":"রহস্যময় মৃত্যুর তদন্ত...",
 "full":"একটি locked room mystery যেখানে Holmes আসল কারণ বের করেন।"
 },
@@ -549,7 +549,7 @@
 "topic":"Detective",
 "rating":"⭐⭐⭐⭐",
 "favorite":false,
-"img":"book-cover/beryl-coronet.jpg",
+"img":"/book-cover/beryl-coronet.jpg",
 "short":"চুরি যাওয়া রাজমুকুট...",
 "full":"Holmes প্রকৃত অপরাধীকে খুঁজে বের করেন।"
 },
@@ -561,7 +561,7 @@
 "topic":"Detective",
 "rating":"⭐⭐⭐⭐⭐",
 "favorite":false,
-"img":"book-cover/empty-house.jpg",
+"img":"/book-cover/empty-house.jpg",
 "short":"Holmes এর ফিরে আসা...",
 "full":"Holmes তার শত্রুদের বিরুদ্ধে আবার লড়াই শুরু করেন।"
 },
@@ -573,7 +573,7 @@
 "topic":"Horror",
 "rating":"⭐⭐⭐⭐⭐",
 "favorite":true,
-"img":"book-cover/pagla.jpg",
+"img":"/book-cover/pagla.jpg",
 "short":"রহস্যময় কবর...",
 "full":"একটি ভয়ঙ্কর কবরের রহস্য নিয়ে গল্প।"
 },
@@ -585,7 +585,7 @@
 "topic":"Horror",
 "rating":"⭐⭐⭐⭐",
 "favorite":false,
-"img":"book-cover/gosai.jpg",
+"img":"/book-cover/gosai.jpg",
 "short":"ভুতুড়ে বাড়ি...",
 "full":"একটি রহস্যময় বাড়ির ঘটনা।"
 },
@@ -597,7 +597,7 @@
 "topic":"Horror",
 "rating":"",
 "favorite":false,
-"img":"book-cover/omongol.jpg",
+"img":"/book-cover/omongol.jpg",
 "short":"অশুভ ঘটনা...",
 "full":"অজানা অশুভ শক্তির গল্প।"
 },
@@ -609,7 +609,7 @@
 "topic":"Horror",
 "rating":"",
 "favorite":false,
-"img":"book-cover/ilish.jpg",
+"img":"/book-cover/ilish.jpg",
 "short":"রহস্যময় চরিত্র...",
 "full":"ভয়ঙ্কর অভিজ্ঞতার গল্প।"
 },
@@ -621,7 +621,7 @@
 "topic":"Horror",
 "rating":"",
 "favorite":false,
-"img":"book-cover/kalindi.jpg",
+"img":"/book-cover/kalindi.jpg",
 "short":"ভুতুড়ে নৌকা...",
 "full":"একটি অভিশপ্ত নৌকার রহস্য।"
 },
@@ -633,7 +633,7 @@
 "topic":"Mystery",
 "rating":"",
 "favorite":false,
-"img":"book-cover/maya.jpg",
+"img":"/book-cover/maya.jpg",
 "short":"অদ্ভুত অনুভূতি...",
 "full":"অজানা অনুভূতির গল্প।"
 },
@@ -645,7 +645,7 @@
 "topic":"Horror",
 "rating":"⭐⭐⭐⭐⭐",
 "favorite":true,
-"img":"book-cover/mona.jpg",
+"img":"/book-cover/mona.jpg",
 "short":"ভয়ের গল্প...",
 "full":"একটি অদ্ভুত অভিজ্ঞতা।"
 },
@@ -657,7 +657,7 @@
 "topic":"Horror",
 "rating":"⭐⭐⭐⭐⭐",
 "favorite":true,
-"img":"book-cover/jujuma.jpg",
+"img":"/book-cover/jujuma.jpg",
 "short":"ভুতুড়ে অভিজ্ঞতা...",
 "full":"অজানা আতঙ্কের গল্প।"
 },
@@ -669,7 +669,7 @@
 "topic":"Horror",
 "rating":"",
 "favorite":false,
-"img":"book-cover/khide.jpg",
+"img":"/book-cover/khide.jpg",
 "short":"ভয়ঙ্কর অনুভূতি...",
 "full":"মানসিক ভয়ের গল্প।"
 },
@@ -681,7 +681,7 @@
 "topic":"Horror",
 "rating":"",
 "favorite":false,
-"img":"book-cover/harikath.jpg",
+"img":"/book-cover/harikath.jpg",
 "short":"ভয়ঙ্কর ঘটনা...",
 "full":"অন্ধকার রহস্যের গল্প।"
 }
