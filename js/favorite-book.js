@@ -1,6 +1,6 @@
 let container=document.getElementById("bookContainer")
 
-fetch("data/books.json")
+fetch("/data/books.json")
 .then(res=>res.json())
 .then(data=>{
 
