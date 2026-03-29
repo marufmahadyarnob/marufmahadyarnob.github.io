@@ -33,7 +33,7 @@ body{
     backdrop-filter:blur(15px);
     box-shadow:0 0 40px rgba(0,0,0,0.6);
     padding:25px;
-    animation:containerFade 5s ease;
+    animation:containerFade 2s ease;
     position:relative;
     overflow:hidden;
 }
@@ -88,7 +88,7 @@ body{
 
 .section{
     margin-top:20px;
-    animation:slideUp 5s ease;
+    animation:slideUp 2s ease;
     position:relative;
     z-index:1;
 }
