@@ -5,13 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact | Maruf Mahady Arnob</title>
 <!-- ===== BASIC META ===== -->
+<script>
+  if (window.location.pathname === '/contact-me.html') {
+    window.history.replaceState(null, '', '/contact-me/');
+  }
+</script>
 
-
-<link rel="stylesheet" href="css/contact-me.css">
+<link rel="stylesheet" href="/css/contact-me.css">
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <!-- ===== Favicon of Browser Tab  ===== -->
-    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="icon" type="image/png" href="/images/favicon.png">
 
 <!-- ===== Preview for link sharing ===== -->
     <meta property="og:title" content="Maruf Mahady Arnob | Portfolio">
@@ -31,7 +35,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 
         <!-- LEFT PROFILE -->
         <div class="left">
-            <img src="images/maruf.jpg" class="profile-img">
+            <img src="/images/maruf.jpg" class="profile-img">
             <h1>Maruf Mahady Arnob</h1>
             <h3 class="typing"></h3>
 
@@ -117,6 +121,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 
 <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script src="js/contact-me.js"></script>
+<script src="/js/contact-me.js"></script>
 </body>
 </html>
