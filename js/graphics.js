@@ -1,7 +1,7 @@
 // ================================
 // CONFIG
 // ================================
-const JSON_FILE = "data/graphics.json";
+const JSON_FILE = "/data/graphics.json";
 const WHATSAPP_PHONE = "8801777205950";
 
 // ================================
