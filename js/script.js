@@ -135,9 +135,9 @@ form.addEventListener("submit", async function (e) {
 //======================প্রজেক্ট সেকশন==========================//
 
 document.getElementById("onePageWebsite").onclick = () => {
-    window.location.href = "onepageweb.html";
+    window.location.href = "/onepageweb/index.html";
 };
 
 document.getElementById("graphicsdesign").onclick = () => {
-    window.location.href = "graphics.html";
+    window.location.href = "/graphics/index.html";
 };
