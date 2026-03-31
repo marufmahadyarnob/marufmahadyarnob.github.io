@@ -59,6 +59,7 @@ body{
     height:200%;
     background:radial-gradient(circle,rgba(0,229,255,0.2),transparent);
     animation:rotateGlow 30s linear infinite;
+    pointer-events:none;
 }
 
 @keyframes rotateGlow{
@@ -148,8 +149,9 @@ td:first-child{
 
 /* Back */
 .btn-back{
-    display:inline-block;
-    margin-top:10px;
+    display:block;
+    width:fit-content;
+    margin:20px auto 0;
     padding:10px 20px;
     border-radius:25px;
     background:rgba(255,255,255,0.05);
@@ -157,6 +159,8 @@ td:first-child{
     text-decoration:none;
     border:1px solid cyan;
     transition:0.3s;
+    position:relative;
+    z-index:2;
 }
 
 .btn-back:hover{
