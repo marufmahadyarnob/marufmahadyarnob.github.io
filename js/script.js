@@ -68,15 +68,6 @@ document.querySelectorAll('.navbar a').forEach(link => {
     }
 });
 
-// ===== Visitor Counter with smooth animation =====
-const counter = document.getElementById("visitor-count");
-
-fetch("https://api.countapi.xyz/hit/marufmahadyarnob.github.io/portfolio")
-.then(response => response.json())
-.then(data => {
-    counter.innerText = data.value;
-});
-
 // ===== Confetti function =====
 function createConfetti(){
     const confetti = document.createElement("div");
