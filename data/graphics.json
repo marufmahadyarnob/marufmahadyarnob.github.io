@@ -1,5 +1,15 @@
 [
   {
+    "category": "baisakh",
+    "image": "/images/projects/graphics/baisakh-01.jpg",
+    "title": "Pahela Baisakh | পহেলা বৈশাখ (কোড: PB-01)"
+  },
+  {
+    "category": "baisakh",
+    "image": "/images/projects/graphics/baisakh-02.jpg",
+    "title": "Pahela Baisakh | পহেলা বৈশাখ (কোড: PB-02)"
+  },
+  {
     "category": "eid",
     "image": "/images/projects/graphics/eid-01.jpg",
     "title": "Eid Poster | ঈদ পোস্টার (কোড: EID-01)"
