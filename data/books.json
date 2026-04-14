@@ -35,7 +35,7 @@
 {
 "name":"উন্মেষ",
 "author":"নারায়ণ গঙ্গোপাধ্যায়",
-"category":"Horror, Mistry",
+"category":"Horror",
 "topic":"Psychological, Dark Mystery",
 "rating":"⭐⭐⭐⭐",
 "favorite":false,
@@ -343,7 +343,7 @@
 {
 "name":"স্বর",
 "author":"সায়ক আমান",
-"category":"Horror, Mistry",
+"category":"Horror",
 "topic":"Horror, Psychological",
 "rating":"⭐⭐⭐⭐⭐",
 "favorite":true,
@@ -354,7 +354,7 @@
 {
 "name":"ইয়াজদার্গিদের হীরে",
 "author":"সৈয়দ মুস্তাফা সিরাজ",
-"category":"Horror, Mistry",
+"category":"Mistry",
 "topic":"Horror, Mystery",
 "rating":"⭐⭐⭐⭐",
 "favorite":false,
@@ -377,7 +377,7 @@
 {
 "name":"Rhyme",
 "author":"সায়ক আমান",
-"category":"Horror, Mistry",
+"category":"Mistry",
 "topic":"Horror, Psychological",
 "rating":"⭐⭐⭐⭐",
 "favorite":false,
@@ -389,7 +389,7 @@
 {
 "name":"শিষ",
 "author":"সায়ক আমান",
-"category":"Horror, Mistry",
+"category":"Mistry",
 "topic":"Horror, Psychological",
 "rating":"⭐⭐⭐⭐",
 "favorite":true,
