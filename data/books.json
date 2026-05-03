@@ -1,5 +1,115 @@
 [
 {
+"name":"সর্বনাশিণী",
+"author":"পাঁচকড়ি দে",
+"category":"Horror",
+"topic":"Supernatural Revenge",
+"rating":"⭐⭐⭐⭐",
+"favorite":false,
+"img":"/book-cover/sarbanashini.jpg",
+"short":"অভিশপ্ত প্রতিশোধের গল্প...",
+"full":"অতিপ্রাকৃত প্রতিহিংসার এক ভয়ংকর কাহিনি যেখানে অশুভ শক্তি ধীরে ধীরে গ্রাস করে সবকিছু।"
+},
+{
+"name":"জাদুমহল",
+"author":"বৈশালী দাশগুপ্ত নন্দী",
+"category":"Horror",
+"topic":"Haunted House",
+"rating":"⭐⭐⭐⭐⭐",
+"favorite":false,
+"img":"/book-cover/jadumohol.jpg",
+"short":"রহস্যময় প্রাসাদের কাহিনি...",
+"full":"এক পুরোনো প্রাসাদে লুকিয়ে থাকা ভয়ংকর রহস্য ধীরে ধীরে প্রকাশ পেতে থাকে।"
+},
+{
+"name":"মাহুরী কুঠিতে এক রাত",
+"author":"প্রেমেন্দ্র মিত্র",
+"category":"Horror",
+"topic":"Ghost Encounter",
+"rating":"⭐⭐⭐⭐",
+"favorite":false,
+"img":"/book-cover/mahuri.jpg",
+"short":"এক রাত, অসীম ভয়...",
+"full":"একটি নির্জন কুঠিতে কাটানো রাত যা ধীরে ধীরে ভয়ংকর অভিজ্ঞতায় পরিণত হয়।"
+},
+{
+"name":"দেহান্তর",
+"author":"শরদিন্দু বন্দ্যোপাধ্যায়",
+"category":"Horror",
+"topic":"Soul Transfer",
+"rating":"⭐⭐⭐⭐",
+"favorite":false,
+"img":"/book-cover/dehantor.jpg",
+"short":"আত্মার স্থানান্তর...",
+"full":"দেহ বদলের রহস্যময় গল্প যেখানে বাস্তবতা হারিয়ে যায়।"
+},
+{
+"name":"মানুষ পিশাচ",
+"author":"হেমেন্দ্র কুমার রায়",
+"category":"Horror",
+"topic":"Human Monster",
+"rating":"⭐⭐⭐⭐",
+"favorite":false,
+"img":"/book-cover/manush-pishach.jpg",
+"short":"মানুষের ভিতরের দানব...",
+"full":"মানুষের ভেতরের অন্ধকার দিকের ভয়ংকর প্রকাশ।"
+},
+{
+"name":"গল্পের শেষে",
+"author":"প্রেমেন্দ্র মিত্র",
+"category":"Horror",
+"topic":"Twist",
+"rating":"⭐⭐⭐⭐",
+"favorite":false,
+"img":"/book-cover/golper-sheshe.jpg",
+"short":"শেষেই আসল চমক...",
+"full":"শেষ মুহূর্তে গল্প এমন মোড় নেয় যা সবকিছু বদলে দেয়।"
+},
+{
+"name":"হাসি",
+"author":"বিভূতিভূষণ বন্দ্যোপাধ্যায়",
+"category":"Horror",
+"topic":"Psychological",
+"rating":"⭐⭐⭐⭐",
+"favorite":false,
+"img":"/book-cover/hasi.jpg",
+"short":"এক রহস্যময় হাসি...",
+"full":"একটি অদ্ভুত হাসি থেকে শুরু হয় মানসিক ভয়ের যাত্রা।"
+},
+{
+"name":"ভৈরব তান্ত্রিকের গল্প",
+"author":"বিভূতিভূষণ বন্দ্যোপাধ্যায়",
+"category":"Horror",
+"topic":"Tantric",
+"rating":"⭐⭐⭐⭐",
+"favorite":false,
+"img":"/book-cover/tantrik.jpg",
+"short":"তান্ত্রিক শক্তির গল্প...",
+"full":"অলৌকিক শক্তির ভয়ংকর ব্যবহার নিয়ে কাহিনি।"
+},
+{
+"name":"ফাঁসি",
+"author":"মানিক বন্দ্যোপাধ্যায়",
+"category":"Horror",
+"topic":"Dark Psychology",
+"rating":"⭐⭐⭐⭐",
+"favorite":false,
+"img":"/book-cover/fansi.jpg",
+"short":"অন্তর্দ্বন্দ্বের ভয়...",
+"full":"মানসিক যন্ত্রণার ভয়ংকর রূপ তুলে ধরে।"
+},
+{
+"name":"অপদেবতা",
+"author":"কৌশিক মজুমদার",
+"category":"Horror",
+"topic":"Dark Entity",
+"rating":"⭐⭐⭐⭐⭐⭐",
+"favorite":true,
+"img":"/book-cover/opodebota.jpg",
+"short":"অশুভ শক্তির ছায়া...",
+"full":"অপদেবতার প্রভাব মানুষের জীবনকে ধীরে ধীরে গ্রাস করে।"
+},  
+{
 "name":"ভূত শিকারি মেজোকর্তা",
 "author":"প্রেমেন্দ্র মিত্র",
 "category":"Horror",
