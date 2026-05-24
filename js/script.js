@@ -132,3 +132,7 @@ document.getElementById("onePageWebsite").onclick = () => {
 document.getElementById("graphicsdesign").onclick = () => {
     window.location.href = "/graphics/";
 };
+
+document.getElementById("small-software").onclick = () => {
+    window.location.href = "/small-software/";
+};
