@@ -1,18 +1,33 @@
+import { db, collection, getDocs } from "./firebase.js";
+
 let container=document.getElementById("bookContainer")
 
-fetch("/data/books.json")
-.then(res=>res.json())
-.then(data=>{
+async function loadBooks(){
 
-document.getElementById("totalCount").innerText="Total Books: "+data.length
+const querySnapshot = await getDocs(collection(db, "books"));
+
+let data=[];
+
+querySnapshot.forEach((doc)=>{
+
+data.push(doc.data());
+
+});
+
+document.getElementById("totalCount").innerText =
+"Total Books: " + data.length;
 
 data.forEach(book=>{
 
-let fav=book.favorite?'<div class="book-badge">❤️ Favorite</div>':''
+let fav=book.favorite
+?'<div class="book-badge">❤️ Favorite</div>'
+:'';
 
-let card=document.createElement("div")
-card.className="book-card"
-card.setAttribute("data-category",book.category)
+let card=document.createElement("div");
+
+card.className="book-card";
+
+card.setAttribute("data-category",book.category);
 
 card.innerHTML=`
 
@@ -41,13 +56,15 @@ ${fav}
 
 </div>
 </div>
-`
+`;
 
-container.appendChild(card)
+container.appendChild(card);
 
-})
+});
 
-})
+}
+
+loadBooks();
 
 // more button
 document.addEventListener("click",function(e){
