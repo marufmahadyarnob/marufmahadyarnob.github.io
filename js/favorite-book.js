@@ -1,17 +1,12 @@
-import { db, collection, getDocs } from "./firebase.js";
+import { db, collection, getDocs } from "/js/firebase.js";
 
 let container=document.getElementById("bookContainer")
-
 async function loadBooks(){
-
 const querySnapshot = await getDocs(collection(db, "books"));
-
 let data=[];
 
 querySnapshot.forEach((doc)=>{
-
 data.push(doc.data());
-
 });
 
 document.getElementById("totalCount").innerText =
@@ -26,19 +21,13 @@ let fav=book.favorite
 let card=document.createElement("div");
 
 card.className="book-card";
-
 card.setAttribute("data-category",book.category);
-
 card.innerHTML=`
 
 <div class="card-inner">
-
 <img src="${book.img}" class="book-img">
-
 <div class="book-details">
-
 <h2 class="book-name">${book.name}</h2>
-
 <div class="book-info">
 <span>লেখক: ${book.author}</span>
 <span>টপিক: ${book.topic}</span>
