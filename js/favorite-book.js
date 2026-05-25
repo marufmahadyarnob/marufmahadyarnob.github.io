@@ -1,6 +1,9 @@
-import { db, collection, getDocs } from "/js/firebase.js";
+import { db, collection, getDocs } from "./firebase.js";
 
-let container=document.getElementById("bookContainer")
+let container=document.getElementById("bookContainer");
+if (!container){
+  console.error("BookContainer not found in HTML");
+}
 async function loadBooks(){
 const querySnapshot = await getDocs(collection(db, "books"));
 let data=[];
