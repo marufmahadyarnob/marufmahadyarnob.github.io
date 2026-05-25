@@ -5,15 +5,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="icon" type="image/png" href="/images/favicon.png">
-
 <title>প্রিয় বইগুলো</title>
 
+<link rel="icon" type="image/png" href="/images/favicon.png">
 <link rel="stylesheet" href="/css/favorite-book-style.css">
-
-<!-- ===== Favicon of Browser Tab  ===== -->
-    <link rel="icon" type="image/png" href="/images/favicon.png">
-
 
 </head>
 
@@ -25,7 +20,7 @@
 
 <input type="text" id="searchInput" placeholder="বই খুঁজুন...">
 
-<div class="category-filter" id="categoryFilter">
+<div class="category-filter">
 
 <button class="cat-btn" data-cat="all">All</button>
 <button class="cat-btn" data-cat="Novel">Novel</button>
@@ -46,19 +41,17 @@
 <img src="/images/favorite-book.jpg" class="banner-img">
 </section>
 
-<p style="font-size: clamp(12px, 2vw, 14px); color: #cfcfcf; text-align: center; margin: 14px auto 0; line-height: 1.7; opacity: 0.9; max-width: 90%;">
-  <strong>বি.দ্র.:</strong> নিচের ফটোকার্ডের রূপক ছবিগুলো Ai দিয়ে তৈরি করা এবং ইন্টারনেট থেকে নেওয়া। আর <strong>"More"</strong> সেকশনটি কৃত্রিম বুদ্ধিমত্তা (AI) দিয়ে তৈরি।
-</p>    
-    
-<section class="book-container" id="bookContainer">
+<p style="font-size: 14px; color: #cfcfcf; text-align: center; margin-top: 10px; opacity: 0.9;">
+  <strong>বি.দ্র.:</strong> নিচের কার্ডগুলো AI generated ছবি এবং ডাটা Firebase থেকে লোড করা হয়।
+</p>
 
-<!-- Books will load from JSON -->
-
-</section>
+<section class="book-container" id="bookContainer"></section>
 
 <button id="topBtn">↑</button>
 
-<script type="module" src="/js/favorite-book.js"></script>
+<!-- ⚡ IMPORTANT: module script MUST be here -->
+<script type="module" src="./js/favorite-book.js"></script>
 
 </body>
-</html> 
+
+</html>
