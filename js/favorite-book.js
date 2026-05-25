@@ -1,122 +1,144 @@
 import { db, collection, getDocs } from "./firebase.js";
 
-let container=document.getElementById("bookContainer");
-if (!container){
-  console.error("BookContainer not found in HTML");
-}
-async function loadBooks(){
-const querySnapshot = await getDocs(collection(db, "books"));
-let data=[];
+let container = document.getElementById("bookContainer");
 
-querySnapshot.forEach((doc)=>{
-data.push(doc.data());
-});
+async function loadBooks() {
 
-document.getElementById("totalCount").innerText =
-"Total Books: " + data.length;
+  try {
 
-data.forEach(book=>{
+    const querySnapshot = await getDocs(collection(db, "books"));
 
-let fav=book.favorite
-?'<div class="book-badge">❤️ Favorite</div>'
-:'';
+    let data = [];
 
-let card=document.createElement("div");
+    querySnapshot.forEach((doc) => {
+      data.push({
+        id: doc.id,
+        ...doc.data()
+      });
+    });
 
-card.className="book-card";
-card.setAttribute("data-category",book.category);
-card.innerHTML=`
+    console.log("Books loaded:", data);
 
-<div class="card-inner">
-<img src="${book.img}" class="book-img">
-<div class="book-details">
-<h2 class="book-name">${book.name}</h2>
-<div class="book-info">
-<span>লেখক: ${book.author}</span>
-<span>টপিক: ${book.topic}</span>
-</div>
+    document.getElementById("totalCount").innerText =
+      "Total Books: " + data.length;
 
-<div class="book-meta">
-<div class="book-rating">${book.rating}</div>
-${fav}
-</div>
+    container.innerHTML = ""; // avoid duplicate render
 
-<p class="book-description short">${book.short}</p>
-<p class="book-description full">${book.full}</p>
+    data.forEach(book => {
 
-<button class="more-btn">More</button>
+      let fav = book.favorite
+        ? '<div class="book-badge">❤️ Favorite</div>'
+        : '';
 
-</div>
-</div>
-`;
+      let card = document.createElement("div");
 
-container.appendChild(card);
+      card.className = "book-card";
+      card.setAttribute("data-category", book.category);
 
-});
+      card.innerHTML = `
+        <div class="card-inner">
 
+          <img src="${book.img}" class="book-img">
+
+          <div class="book-details">
+
+            <h2 class="book-name">${book.name}</h2>
+
+            <div class="book-info">
+              <span>লেখক: ${book.author}</span>
+              <span>টপিক: ${book.topic}</span>
+            </div>
+
+            <div class="book-meta">
+              <div class="book-rating">${book.rating}</div>
+              ${fav}
+            </div>
+
+            <p class="book-description short">${book.short}</p>
+            <p class="book-description full" style="display:none">${book.full}</p>
+
+            <button class="more-btn">More</button>
+
+          </div>
+        </div>
+      `;
+
+      container.appendChild(card);
+
+    });
+
+  } catch (error) {
+    console.error("Error loading books:", error);
+  }
 }
 
 loadBooks();
 
-// more button
-document.addEventListener("click",function(e){
 
-if(e.target.classList.contains("more-btn")){
+// 🔥 MORE BUTTON (event delegation)
+document.addEventListener("click", function (e) {
 
-let card=e.target.parentElement
+  if (e.target.classList.contains("more-btn")) {
 
-card.querySelector(".short").style.display="none"
-card.querySelector(".full").style.display="block"
+    let card = e.target.closest(".book-card");
 
-e.target.style.display="none"
+    card.querySelector(".short").style.display = "none";
+    card.querySelector(".full").style.display = "block";
 
-}
+    e.target.style.display = "none";
+  }
 
-})
+});
 
-// search
-document.getElementById("searchInput").addEventListener("keyup",function(){
 
-let value=this.value.toLowerCase()
+// 🔍 SEARCH
+document.getElementById("searchInput").addEventListener("keyup", function () {
 
-document.querySelectorAll(".book-card").forEach(card=>{
+  let value = this.value.toLowerCase();
 
-let text=card.innerText.toLowerCase()
+  document.querySelectorAll(".book-card").forEach(card => {
 
-card.style.display=text.includes(value)?"block":"none"
+    let text = card.innerText.toLowerCase();
 
-})
+    card.style.display = text.includes(value) ? "block" : "none";
 
-})
+  });
 
-// category
-document.querySelectorAll(".cat-btn").forEach(btn=>{
+});
 
-btn.addEventListener("click",function(){
 
-let cat=this.getAttribute("data-cat")
+// 📂 CATEGORY FILTER
+document.querySelectorAll(".cat-btn").forEach(btn => {
 
-document.querySelectorAll(".book-card").forEach(card=>{
+  btn.addEventListener("click", function () {
 
-card.style.display=(cat==="all" || card.getAttribute("data-category")===cat)?"block":"none"
+    let cat = this.getAttribute("data-cat");
 
-})
+    document.querySelectorAll(".book-card").forEach(card => {
 
-})
+      card.style.display =
+        (cat === "all" || card.getAttribute("data-category") === cat)
+          ? "block"
+          : "none";
 
-})
+    });
 
-// scroll button
-let topBtn=document.getElementById("topBtn")
+  });
 
-window.onscroll=function(){
+});
 
-topBtn.style.display=window.scrollY>200?"block":"none"
 
-}
+// ⬆️ SCROLL TO TOP
+let topBtn = document.getElementById("topBtn");
 
-topBtn.onclick=function(){
+window.addEventListener("scroll", function () {
 
-window.scrollTo({top:0,behavior:"smooth"})
+  topBtn.style.display = window.scrollY > 200 ? "block" : "none";
 
-}
+});
+
+topBtn.addEventListener("click", function () {
+
+  window.scrollTo({ top: 0, behavior: "smooth" });
+
+});
