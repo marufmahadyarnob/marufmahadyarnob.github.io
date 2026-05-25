@@ -37,28 +37,20 @@ async function loadBooks() {
 
       card.innerHTML = `
         <div class="card-inner">
-
-          <img src="${book.img}" class="book-img">
-
+          <img src="${book.image}" class="book-img">
           <div class="book-details">
-
             <h2 class="book-name">${book.name}</h2>
-
             <div class="book-info">
               <span>লেখক: ${book.author}</span>
               <span>টপিক: ${book.topic}</span>
             </div>
-
             <div class="book-meta">
               <div class="book-rating">${book.rating}</div>
               ${fav}
             </div>
-
             <p class="book-description short">${book.short}</p>
             <p class="book-description full" style="display:none">${book.full}</p>
-
             <button class="more-btn">More</button>
-
           </div>
         </div>
       `;
