@@ -1,6 +1,7 @@
 import { db, collection, getDocs } from "./firebase.js";
 
-let container = document.getElementById("bookContainer");
+const container = document.getElementById("bookContainer");
+const topBtn = document.getElementById("topBtn");
 
 async function loadBooks() {
 
@@ -19,10 +20,17 @@ async function loadBooks() {
 
     console.log("Books loaded:", data);
 
-    document.getElementById("totalCount").innerText =
-      "Total Books: " + data.length;
+    const totalCount = document.getElementById("totalCount");
+    if (totalCount) {
+      totalCount.innerText = "Total Books: " + data.length;
+    }
 
-    container.innerHTML = ""; // avoid duplicate render
+    if (!container) {
+      console.error("bookContainer not found in HTML");
+      return;
+    }
+
+    container.innerHTML = "";
 
     data.forEach(book => {
 
@@ -37,20 +45,28 @@ async function loadBooks() {
 
       card.innerHTML = `
         <div class="card-inner">
+
           <img src="${book.image}" class="book-img">
+
           <div class="book-details">
+
             <h2 class="book-name">${book.name}</h2>
+
             <div class="book-info">
               <span>লেখক: ${book.author}</span>
               <span>টপিক: ${book.topic}</span>
             </div>
+
             <div class="book-meta">
               <div class="book-rating">${book.rating}</div>
               ${fav}
             </div>
+
             <p class="book-description short">${book.short}</p>
             <p class="book-description full" style="display:none">${book.full}</p>
+
             <button class="more-btn">More</button>
+
           </div>
         </div>
       `;
@@ -67,12 +83,14 @@ async function loadBooks() {
 loadBooks();
 
 
-// 🔥 MORE BUTTON (event delegation)
+// 🔥 MORE BUTTON
 document.addEventListener("click", function (e) {
 
   if (e.target.classList.contains("more-btn")) {
 
     let card = e.target.closest(".book-card");
+
+    if (!card) return;
 
     card.querySelector(".short").style.display = "none";
     card.querySelector(".full").style.display = "block";
@@ -83,54 +101,68 @@ document.addEventListener("click", function (e) {
 });
 
 
-// 🔍 SEARCH
-document.getElementById("searchInput").addEventListener("keyup", function () {
+// 🔍 SEARCH (SAFE)
+const searchInput = document.getElementById("searchInput");
 
-  let value = this.value.toLowerCase();
+if (searchInput) {
 
-  document.querySelectorAll(".book-card").forEach(card => {
+  searchInput.addEventListener("keyup", function () {
 
-    let text = card.innerText.toLowerCase();
-
-    card.style.display = text.includes(value) ? "block" : "none";
-
-  });
-
-});
-
-
-// 📂 CATEGORY FILTER
-document.querySelectorAll(".cat-btn").forEach(btn => {
-
-  btn.addEventListener("click", function () {
-
-    let cat = this.getAttribute("data-cat");
+    let value = this.value.toLowerCase();
 
     document.querySelectorAll(".book-card").forEach(card => {
 
-      card.style.display =
-        (cat === "all" || card.getAttribute("data-category") === cat)
-          ? "block"
-          : "none";
+      let text = card.innerText.toLowerCase();
+
+      card.style.display = text.includes(value) ? "block" : "none";
 
     });
 
   });
 
-});
+}
 
 
-// ⬆️ SCROLL TO TOP
-let topBtn = document.getElementById("topBtn");
+// 📂 CATEGORY FILTER (SAFE)
+const catBtns = document.querySelectorAll(".cat-btn");
 
-window.addEventListener("scroll", function () {
+if (catBtns.length) {
 
-  topBtn.style.display = window.scrollY > 200 ? "block" : "none";
+  catBtns.forEach(btn => {
 
-});
+    btn.addEventListener("click", function () {
 
-topBtn.addEventListener("click", function () {
+      let cat = this.getAttribute("data-cat");
 
-  window.scrollTo({ top: 0, behavior: "smooth" });
+      document.querySelectorAll(".book-card").forEach(card => {
 
-});
+        card.style.display =
+          (cat === "all" || card.getAttribute("data-category") === cat)
+            ? "block"
+            : "none";
+
+      });
+
+    });
+
+  });
+
+}
+
+
+// ⬆️ SCROLL TO TOP (SAFE)
+if (topBtn) {
+
+  window.addEventListener("scroll", function () {
+
+    topBtn.style.display = window.scrollY > 200 ? "block" : "none";
+
+  });
+
+  topBtn.addEventListener("click", function () {
+
+    window.scrollTo({ top: 0, behavior: "smooth" });
+
+  });
+
+}
