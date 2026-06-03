@@ -126,13 +126,13 @@ form.addEventListener("submit", async function (e) {
 //======================প্রজেক্ট সেকশন==========================//
 
 document.getElementById("onePageWebsite").onclick = () => {
-    window.location.href = "/onepageweb/";
+    window.location.href = "https://personal-content-hub-978283473239.asia-southeast1.run.app/#websites";
 };
 
 document.getElementById("graphicsdesign").onclick = () => {
-    window.location.href = "/graphics/";
+    window.location.href = "https://personal-content-hub-978283473239.asia-southeast1.run.app/#graphics";
 };
 
 document.getElementById("small-software").onclick = () => {
-    window.location.href = "/small-software/";
+    window.location.href = "https://personal-content-hub-978283473239.asia-southeast1.run.app/#softwares";
 };
